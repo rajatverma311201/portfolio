@@ -13,11 +13,8 @@
         font-family: $font-secondary;
         // color: $color-primary;
         text-shadow: 0 0 2px $color-primary;
-        background: $gradient-red-hover;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: transparent;
+
+        color: $color-primary;
         font-size: 5rem;
         margin-right: 2rem;
     }

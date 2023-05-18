@@ -46,4 +46,11 @@ h1 {
     display: flex;
     @include border-radius(50%);
     padding: 1rem;
+    border: 2px solid $background-color-2;
+    cursor: pointer;
+
+    @include transition(box-shadow 0.25s ease-in-out);
+    &:hover {
+        box-shadow: 0 0 25px 25px rgba($color: $color-primary, $alpha: 0.025);
+    }
 }
