@@ -13,10 +13,10 @@ const Header = () => {
                 className={styles["header-outer-container"]}
             >
                 <header className={styles["header"]}>
-                    <div className={styles["main-nav-img"]}>
+                    <div className={styles["header-img"]}>
                         <img src="/my-photo.jpg" alt="My Photo" />
                     </div>
-                    <h2 className={styles["main-nav-name"]}>Rajat Verma</h2>
+                    <h2 className={styles["header-name"]}>Rajat Verma</h2>
                     <NavigationBar />
                 </header>
             </motion.div>

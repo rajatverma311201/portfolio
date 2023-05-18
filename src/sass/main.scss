@@ -10,6 +10,10 @@ body {
     font-family: $font-primary;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     // padding: 5;
     padding-inline: 5rem;
@@ -29,4 +33,17 @@ main {
 }
 h1 {
     color: aliceblue;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    color: $color-primary;
+    font-size: 4rem;
+    background: $background-color-1;
+    box-shadow: $shadow-1;
+    display: flex;
+    @include border-radius(50%);
+    padding: 1rem;
 }

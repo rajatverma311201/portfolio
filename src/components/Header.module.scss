@@ -19,7 +19,7 @@
 }
 
 .header {
-    backdrop-filter: blur(22.5px);
+    backdrop-filter: blur(15px);
     @include flex(0rem);
     background-color: rgba($background-color-2, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -27,10 +27,6 @@
     font-size: 1.75rem;
     box-shadow: $shadow-1;
     @include border-radius(10px);
-}
-
-.main-nav {
-    margin-left: auto;
 
     &-img {
         width: 5rem;
@@ -62,10 +58,14 @@
 
     &-name {
         font-size: 2.5rem;
-        font-weight: 500;
+        font-weight: 600;
         color: $color-primary;
         font-family: $font-secondary;
     }
+}
+
+.main-nav {
+    margin-left: auto;
 
     & > ul {
         font-size: 1.9rem;
@@ -82,5 +82,9 @@
                 text-shadow: 0 0 2px $color-secondary;
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 }
