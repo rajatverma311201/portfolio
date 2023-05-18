@@ -17,7 +17,7 @@ const SkillsSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
-                    delay: 0.5,
+                    delay: 0.25,
                     duration: 0.5,
                 }}
                 className={styles["skills-main-heading"]}
@@ -31,7 +31,7 @@ const SkillsSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
-                    delay: 0.5,
+                    delay: 0.25,
                     duration: 0.5,
                 }}
                 className={styles["skills-main-heading"]}
@@ -49,7 +49,7 @@ const SkillsSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
-                    delay: 0.5,
+                    delay: 0.25,
                     duration: 0.5,
                 }}
                 className={styles["skills-main-heading"]}
@@ -66,10 +66,10 @@ export default SkillsSection;
 const Languages = () => (
     <motion.div
         viewport={{ once: true }}
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.5,
+            delay: 0.25,
             duration: 0.5,
         }}
         className={styles["skills"]}
@@ -95,10 +95,10 @@ const Languages = () => (
 const WebSkills = () => (
     <motion.div
         viewport={{ once: true }}
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.5,
+            delay: 0.25,
             duration: 0.5,
         }}
         className={styles["skills"]}
@@ -135,10 +135,10 @@ const WebSkills = () => (
 const MobileSkills = () => (
     <motion.div
         viewport={{ once: true }}
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.5,
+            delay: 0.25,
             duration: 0.5,
         }}
         className={styles["skills"]}
@@ -165,10 +165,10 @@ const MobileSkills = () => (
 const DBSkills = () => (
     <motion.div
         viewport={{ once: true }}
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.5,
+            delay: 0.25,
             duration: 0.5,
         }}
         className={styles["skills"]}
@@ -199,10 +199,10 @@ const DBSkills = () => (
 const Tools = () => (
     <motion.div
         viewport={{ once: true }}
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-            delay: 0.5,
+            delay: 0.25,
             duration: 0.5,
         }}
         className={styles["skills"]}
