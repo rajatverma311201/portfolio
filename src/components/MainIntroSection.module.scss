@@ -1,0 +1,55 @@
+@import "@/sass/main";
+
+.container {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 10rem;
+    margin-bottom: 10rem;
+
+    &-welcome {
+        font-size: 1.75rem;
+        color: $color-midgray;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+    }
+    .name {
+        color: $color-primary;
+        font-weight: 700;
+    }
+
+    .intro-text {
+        font-weight: 600;
+        line-height: 1.25;
+        // font-family: $font-secondary;
+    }
+
+    .resume-btn {
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 2.25rem;
+        font-weight: 600;
+        padding: 1.75rem 5rem;
+        color: $color-primary;
+        font-family: $font-secondary;
+        box-shadow: $shadow-1;
+        background: $background-color-1;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        @include border-radius(5px);
+        @include transition(all 0.25s ease-in-out);
+
+        &:hover {
+            // color: $color-primary;
+            background: $background-color-2;
+            // box-shadow: ;
+            @include transform(translateY(-5px) scale(1.01));
+        }
+    }
+}

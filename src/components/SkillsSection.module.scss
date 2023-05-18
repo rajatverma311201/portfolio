@@ -1,0 +1,75 @@
+@import "@/sass/main";
+
+.skills-main-container {
+    .skills-main-heading {
+        // margin-bottom: 2rem;
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 3rem;
+        color: $color-lighter;
+    }
+
+    .heading-highlight {
+        font-family: $font-secondary;
+        // color: $color-primary;
+        text-shadow: 0 0 2px $color-primary;
+        background: $gradient-red-hover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 5rem;
+        margin-right: 2rem;
+    }
+
+    .skills {
+        .skills-heading {
+            font-size: 2.25rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: $color-lighter;
+            text-align: center;
+            margin: 3rem auto 2rem auto;
+
+            text-transform: uppercase;
+        }
+
+        .skills-list {
+            margin-inline: 20rem;
+            display: flex;
+            flex-wrap: wrap;
+            @include flex(2.5rem, center, stretch);
+            .skill {
+                background: $background-color-1;
+                box-shadow: $shadow-1;
+                padding: 1.25rem 1.5rem;
+                @include border-radius(5px);
+                @include flex(1rem, center, center, column);
+                position: relative;
+                @include transition(box-shadow 0.5s ease-in-out);
+                &__logo {
+                    width: 4rem;
+                    height: auto;
+                    // scale: 1.1;
+                }
+
+                &__logo--mod {
+                    @include transform(scale(1.25));
+                }
+
+                &__logo--mod2 {
+                    filter: invert(1) grayscale(1) contrast(9);
+                    -webkit-filter: invert(1) grayscale(1) contrast(9);
+                }
+                &__logo--mod3 {
+                    @include transform(scale(1.5));
+                }
+                &__logo--mod4 {
+                    @include transform(scale(2));
+                }
+                &:hover {
+                    box-shadow: $shadow-2;
+                }
+            }
+        }
+    }
+}

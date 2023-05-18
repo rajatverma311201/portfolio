@@ -1,0 +1,86 @@
+@import "@/sass/main";
+
+.size-box {
+    position: fixed;
+    background-color: $background-color-2;
+    width: 100%;
+    height: 2rem;
+    top: 0;
+    z-index: 10000;
+}
+.header-outer-container {
+    // background-color: $background-color-2;
+    position: sticky;
+    // margin-top: 2rem;
+    top: 0;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    z-index: 10000;
+}
+
+.header {
+    backdrop-filter: blur(22.5px);
+    @include flex(0rem);
+    background-color: rgba($background-color-2, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 5rem;
+    font-size: 1.75rem;
+    box-shadow: $shadow-1;
+    @include border-radius(10px);
+}
+
+.main-nav {
+    margin-left: auto;
+
+    &-img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        overflow: hidden;
+
+        outline: $color-body 2px solid;
+        outline-offset: 2px;
+        @include border-radius(50%);
+        @include transition(all 0.5s ease-in-out);
+
+        &:hover img {
+            @include transform(scale(1.1));
+        }
+
+        &:hover {
+            outline-color: $color-primary;
+            box-shadow: 0 0 25px 25px rgba($color: $color-primary, $alpha: 0.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 0.5s ease-in-out);
+        }
+    }
+
+    &-name {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $color-primary;
+        font-family: $font-secondary;
+    }
+
+    & > ul {
+        font-size: 1.9rem;
+        @include flex(2rem);
+        list-style: none;
+        margin-left: auto;
+        text-transform: uppercase;
+
+        a {
+            color: $color-lighter;
+            text-decoration: none;
+            &:hover {
+                color: $color-secondary;
+                text-shadow: 0 0 2px $color-secondary;
+            }
+        }
+    }
+}
