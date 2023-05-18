@@ -1,6 +1,10 @@
 @import "@/sass/main";
 
 .skills-main-container {
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 10rem;
+    margin-bottom: 10rem;
+    // background: $background-color-1;
     .skills-main-heading {
         // margin-bottom: 2rem;
         margin-top: 10rem;
@@ -12,7 +16,7 @@
     .heading-highlight {
         font-family: $font-secondary;
         // color: $color-primary;
-        text-shadow: 0 0 2px $color-primary;
+        text-shadow: 0 0 2.5px rgba($color-primary, 0.5);
 
         color: $color-primary;
         font-size: 5rem;

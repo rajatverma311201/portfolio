@@ -62,6 +62,10 @@
         color: $color-primary;
         font-family: $font-secondary;
     }
+
+    @media (max-width: 480px) {
+        padding-inline: 0;
+    }
 }
 
 .main-nav {

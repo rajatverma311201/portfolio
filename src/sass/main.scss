@@ -54,3 +54,9 @@ h1 {
         box-shadow: 0 0 25px 25px rgba($color: $color-primary, $alpha: 0.025);
     }
 }
+
+@media (max-width: 480px) {
+    main {
+        padding-inline: 5rem;
+    }
+}
