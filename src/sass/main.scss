@@ -8,6 +8,7 @@ body {
     // padding: 1rem;
     padding-top: 2.5rem;
     font-family: $font-primary;
+    // overflow: hidden;
 }
 
 html {
@@ -17,8 +18,10 @@ html {
 main {
     // padding: 5;
     padding-inline: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     margin-top: 5rem;
+    // overflow: hidden;
+    overflow-x: hidden;
 }
 
 .progress-bar {
@@ -58,5 +61,29 @@ h1 {
 @media (max-width: 480px) {
     main {
         padding-inline: 5rem;
+    }
+}
+
+footer h2 {
+    font-family: $font-secondary;
+    font-weight: 600;
+    color: $color-subtitle;
+    text-align: center;
+    padding: 2rem 5rem;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    margin-inline: 2rem;
+    // background-color: rgba($background-color-2, 0.7);
+    // border: 1px solid rgba(255, 255, 255, 0.1);
+    @include border-radius(5px);
+    box-shadow: $shadow-1;
+    @include flex(2rem, center, center);
+
+    span {
+        font-size: 5rem;
+        display: flex;
+        &:last-child {
+            color: #c69;
+        }
     }
 }

@@ -43,10 +43,10 @@
             @include transform(scale(1.1));
         }
 
-        &:hover {
-            outline-color: $color-primary;
-            box-shadow: 0 0 25px 25px rgba($color: $color-primary, $alpha: 0.1);
-        }
+        // &:hover {
+        outline-color: $color-primary;
+        box-shadow: 0 0 25px 20px rgba($color: $color-primary, $alpha: 0.1);
+        // }
 
         & img {
             width: 100%;

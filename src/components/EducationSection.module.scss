@@ -41,15 +41,19 @@
         justify-content: center;
         // gap: 5rem;
         margin-top: 7.5rem;
-        @include flex(10rem, center, stretch);
+        // margin-bottom: 5rem;
+        @include flex(5rem, center, stretch);
         flex-wrap: wrap;
         .edu-container {
             background: $background-color-1;
             box-shadow: $shadow-1;
             width: 32.5rem;
-            padding: 2.5rem;
+            padding: 3rem;
             @include border-radius(5px);
-
+            @include transition(background 0.5s ease-in-out);
+            &:hover {
+                background: $background-color-2;
+            }
             .edu-heading {
                 font-family: $font-secondary;
                 font-size: 1.75rem;
@@ -62,12 +66,36 @@
                 font-size: 1.5rem;
                 font-weight: 500;
                 @include flex(0.5rem, flex-start, center);
+
                 &__short {
                     color: $color-subtitle;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    // background-color: red;
                 }
 
                 &__long {
+                    // background-color: green;
+                    font-weight: 300;
                     color: $color-lighter;
+                }
+            }
+
+            .edu-info {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                @include flex(1rem, flex-start, stretch);
+
+                &__icon {
+                    font-size: 1.75rem;
+                    // margin-right: 1rem;
+                    color: $color-subtitle;
+                    display: flex;
+                }
+                &__text {
+                    font-weight: 400;
+                    color: $color-lighter;
+                    align-self: end;
                 }
             }
         }

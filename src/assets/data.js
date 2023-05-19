@@ -10,27 +10,30 @@ export const EDUCATION_LIST = [
         startYear: "2020",
         endMonth: "June",
         endYear: "2024",
+        time: "2020-24"
     },
     {
         institute: "St. Antony's Inter College",
         location: "Lucknow, Uttar Pradesh",
-        degreeShort: "10th",
-        degreeLong: "High School",
-        startMonth: "April",
-        startYear: "2016",
-        endMonth: "March",
-        endYear: "2017",
-    },
-    {
-        institute: "St. Antony's Inter College",
-        location: "Lucknow, Uttar Pradesh",
-        degreeShort: "12th",
+        degreeShort: "12th (ISC)",
         degreeLong: "Intermediate",
         startMonth: "April",
         startYear: "2018",
         endMonth: "March",
         endYear: "2019",
-    }
+        time: "2019"
+    },
+    {
+        institute: "St. Antony's Inter College",
+        location: "Lucknow, Uttar Pradesh",
+        degreeShort: "10th (ICSE)",
+        degreeLong: "High School",
+        startMonth: "April",
+        startYear: "2016",
+        endMonth: "March",
+        endYear: "2017",
+        time: "2017"
+    },
 ]
 
 export const COURSES_LIST = [
