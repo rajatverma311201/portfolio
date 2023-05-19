@@ -35,4 +35,41 @@
             outline: rgba($color-primary, 0.25) solid 10px;
         }
     }
+
+    .edu-list {
+        display: flex;
+        justify-content: center;
+        // gap: 5rem;
+        margin-top: 7.5rem;
+        @include flex(10rem, center, stretch);
+        flex-wrap: wrap;
+        .edu-container {
+            background: $background-color-1;
+            box-shadow: $shadow-1;
+            width: 32.5rem;
+            padding: 2.5rem;
+            @include border-radius(5px);
+
+            .edu-heading {
+                font-family: $font-secondary;
+                font-size: 1.75rem;
+                color: $color-primary;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .edu-degree {
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                @include flex(0.5rem, flex-start, center);
+                &__short {
+                    color: $color-subtitle;
+                }
+
+                &__long {
+                    color: $color-lighter;
+                }
+            }
+        }
+    }
 }

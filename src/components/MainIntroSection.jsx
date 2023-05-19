@@ -24,7 +24,9 @@ const MainIntroSection = () => {
                 <br />{" "}
                 <motion.div className={styles["name"]}>Rajat Verma</motion.div>
             </h1>
-            <h4 className={styles["intro-text-secondary"]}>a Developer.</h4>
+            <h4 className={styles["intro-text-secondary"]}>
+                a &nbsp;passionate &nbsp;Developer.
+            </h4>
             <button className={styles["resume-btn"]}>
                 <span className={styles["btn-text"]}>Resume</span>
                 <FiDownload className={styles["btn-icon"]} />
