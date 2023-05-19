@@ -7,7 +7,7 @@ export const EXPERIENCE_LIST = [
         type: "Full Time",
         startMonth: "Jan",
         startYear: "2023",
-        endMonth: "June",
+        endMonth: "May",
         endYear: "2023",
         duration: "6 months",
         technologies: ["React", "Spring Boot", "NodeJS", "Flask", "Elastic Search"]
