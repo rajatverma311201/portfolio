@@ -30,14 +30,14 @@ const NavigationBar = () => (
     <nav className={styles["main-nav"]}>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </li>
-            <li>
+            {/* <li>
                 <a href="#">About</a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
                 <a href="#">Contact Me</a>
-            </li>
+            </li> */}
         </ul>
     </nav>
 );

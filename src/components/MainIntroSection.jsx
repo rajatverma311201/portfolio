@@ -27,10 +27,12 @@ const MainIntroSection = () => {
             <h4 className={styles["intro-text-secondary"]}>
                 a &nbsp;passionate &nbsp;Developer.
             </h4>
-            <button className={styles["resume-btn"]}>
-                <span className={styles["btn-text"]}>Resume</span>
-                <FiDownload className={styles["btn-icon"]} />
-            </button>
+            <a href="/Resume_Rajat_Verma.pdf" target="_blank">
+                <button className={styles["resume-btn"]}>
+                    <span className={styles["btn-text"]}>Resume</span>
+                    <FiDownload className={styles["btn-icon"]} />
+                </button>
+            </a>
         </motion.section>
     );
 };
