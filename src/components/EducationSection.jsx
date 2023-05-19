@@ -53,7 +53,7 @@ const EduCard = ({ edu, idx }) => (
         initial={{ opacity: 0, x: 100 * (idx + 1) }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{
-            delay: 1 * idx + 0.5,
+            delay: 0.5 * idx + 0.5,
             duration: 0.5,
         }}
         className={styles["edu-container"]}
@@ -63,7 +63,7 @@ const EduCard = ({ edu, idx }) => (
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{
-                delay: 1 * idx + 0.75,
+                delay: 0.5 * idx + 0.75,
                 duration: 0.5,
             }}
         >

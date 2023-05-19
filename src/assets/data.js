@@ -1,3 +1,59 @@
+export const EXPERIENCE_LIST = [
+    {
+        company: "Nucleus Software",
+        location: "Noida, Uttar Pradesh",
+        expType: "Internship",
+        position: "Software Engineer",
+        type: "Full Time",
+        startMonth: "Jan",
+        startYear: "2023",
+        endMonth: "June",
+        endYear: "2023",
+        duration: "6 months",
+        technologies: ["React", "Spring Boot", "NodeJS", "Flask", "Elastic Search"]
+    },
+    {
+        company: "Svasth 360",
+        location: "Remote",
+        expType: "Internship",
+        position: "Software Engineer",
+        type: "Part Time",
+        startMonth: "Mar",
+        startYear: "2023",
+        endMonth: "April",
+        endYear: "2023",
+        duration: "2 months",
+        technologies: ["React Native", "NextJS", "NodeJS", "MongoDB", "Mongoose", "AgoraSDK"]
+    },
+    {
+        company: "Plasium",
+        location: "Remote",
+        expType: "Internship",
+        position: "Software Engineer",
+        type: "Part Time",
+        startMonth: "Feb",
+        startYear: "2023",
+        endMonth: "Mar",
+        endYear: "2023",
+        duration: "2 months",
+        technologies: ["React Native", "React", "NodeJS", "MongoDB", "Mongoose"]
+    },
+    {
+        company: "Anaemia Mukt Bharat, Ministry of Health and Family Welfare",
+        location: "Remote",
+        expType: "Internship",
+        position: "Web Developer",
+        type: "Part Time",
+        startMonth: "April",
+        startYear: "2023",
+        endMonth: "May",
+        endYear: "2023",
+        duration: "2 months",
+        technologies: ["React"]
+    },
+
+]
+
 export const EDUCATION_LIST = [
     {
         institute: "Indian Institute of Technology, Mandi",

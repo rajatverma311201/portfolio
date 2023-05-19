@@ -1,0 +1,99 @@
+// @import "@/sass/main";
+@import "./EducationSection.module.scss";
+
+.container {
+    margin: 10rem 1rem;
+
+    .experience-main-heading {
+        margin-top: 2.5rem;
+        // margin-bottom: 2rem;
+        text-align: center;
+        font-size: 3rem;
+        color: $color-lighter;
+    }
+
+    .heading-highlight {
+        font-family: $font-secondary;
+        // color: $color-primary;
+        text-shadow: 0 0 2.5px rgba($color-primary, 0.5);
+
+        color: $color-primary;
+        font-size: 5rem;
+        margin-right: 2rem;
+    }
+
+    .experience-icon-container {
+        position: relative;
+        @include flex(0);
+
+        .experience-icon {
+            font-size: 7.5rem;
+            background: rgba($color-primary, 0.75);
+            display: flex;
+            padding: 1rem;
+            @include border-radius(50%);
+            color: $color-lighter;
+            outline: rgba($color-primary, 0.25) solid 10px;
+        }
+    }
+
+    // .edu-list {
+    //     display: flex;
+    //     justify-content: center;
+    //     // gap: 5rem;
+    //     margin-top: 7.5rem;
+    //     // margin-bottom: 5rem;
+    //     @include flex(5rem, center, stretch);
+    //     flex-wrap: wrap;
+    //     .edu-container {
+    //         background: $background-color-1;
+    //         box-shadow: $shadow-1;
+    //         width: 32.5rem;
+    //         padding: 3rem;
+    //         @include border-radius(5px);
+    //         @include transition(background 0.5s ease-in-out);
+    //         &:hover {
+    //             background: $background-color-2;
+    //         }
+    //         .edu-heading {
+    //             font-family: $font-secondary;
+    //             font-size: 1.75rem;
+    //             color: $color-primary;
+    //             font-weight: 700;
+    //             text-transform: uppercase;
+    //         }
+    //     }
+    // }
+    .exp-degree {
+        margin-top: 0.5rem;
+        @include flex(0.25rem, center, flex-start, column);
+
+        &__short {
+            font-size: 1.6rem;
+
+            font-weight: 500;
+            color: $color-lighter;
+        }
+        &__long {
+            font-size: 1.5rem;
+            color: $color-subtitle;
+        }
+    }
+    .tech-list {
+        margin-top: 1.5rem;
+        @include flex(0.5rem, flex-start, flex-start);
+        flex-wrap: wrap;
+        &__item {
+            background: $background-color-2;
+            // background-color: rgba($color-primary, 0.95);
+            box-shadow: $shadow-2;
+            padding: 0.25rem 0.75rem;
+            // margin: 0.5rem;
+            @include border-radius(5px);
+            // border: 1px solid $color-primary;
+            font-size: 1.2rem;
+            color: $color-lighter;
+            font-weight: 400;
+        }
+    }
+}

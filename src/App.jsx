@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState } from "react";
 import "@/sass/main.scss";
 import Header from "@/components/Header";
 import HomePage from "./pages/HomePage";
@@ -15,7 +13,6 @@ import {
 import { FiArrowUp } from "react-icons/fi";
 import { FaReact, FaSass } from "react-icons/fa";
 function App() {
-    const [count, setCount] = useState(0);
     const { scrollYProgress, scrollY } = useScroll();
     const [showButton, setShowButton] = useState(false);
 
