@@ -3,6 +3,7 @@
 
 .container {
     margin: 10rem 1rem;
+    margin-bottom: 15rem;
 
     .experience-main-heading {
         margin-top: 2.5rem;
@@ -37,33 +38,6 @@
         }
     }
 
-    // .edu-list {
-    //     display: flex;
-    //     justify-content: center;
-    //     // gap: 5rem;
-    //     margin-top: 7.5rem;
-    //     // margin-bottom: 5rem;
-    //     @include flex(5rem, center, stretch);
-    //     flex-wrap: wrap;
-    //     .edu-container {
-    //         background: $background-color-1;
-    //         box-shadow: $shadow-1;
-    //         width: 32.5rem;
-    //         padding: 3rem;
-    //         @include border-radius(5px);
-    //         @include transition(background 0.5s ease-in-out);
-    //         &:hover {
-    //             background: $background-color-2;
-    //         }
-    //         .edu-heading {
-    //             font-family: $font-secondary;
-    //             font-size: 1.75rem;
-    //             color: $color-primary;
-    //             font-weight: 700;
-    //             text-transform: uppercase;
-    //         }
-    //     }
-    // }
     .exp-degree {
         margin-top: 0.5rem;
         @include flex(0.25rem, center, flex-start, column);

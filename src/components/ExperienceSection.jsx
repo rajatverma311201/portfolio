@@ -8,7 +8,7 @@ import { Tilt } from "react-tilt";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 const ExperienceSection = () => {
     return (
-        <div className={styles["container"]}>
+        <section className={styles["container"]}>
             <motion.div
                 viewport={{ once: true }}
                 initial={{ opacity: 0 }}
@@ -39,7 +39,7 @@ const ExperienceSection = () => {
                     <ExpCard exp={exp} idx={idx} key={idx} styles={styles} />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
@@ -49,11 +49,11 @@ const ExpCard = ({ exp, idx }) => (
     <Tilt options={defaultOptions}>
         <motion.div
             viewport={{ once: true }}
-            initial={{ opacity: 0, x: 100 * (idx + 1) }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{
-                delay: 0.5 * idx + 0.5,
-                duration: 0.5,
+                delay: 0.25 * idx + 0.25,
+                duration: 0.25,
             }}
             className={styles["edu-container"]}
         >
@@ -62,8 +62,8 @@ const ExpCard = ({ exp, idx }) => (
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
-                    delay: 0.5 * idx + 0.75,
-                    duration: 0.5,
+                    delay: 0.25 * idx + 0.5,
+                    duration: 0.25,
                 }}
             >
                 <motion.h3 className={styles["edu-heading"]}>

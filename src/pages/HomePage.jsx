@@ -1,8 +1,11 @@
 import React from "react";
-import MainIntroSection from "@/components/MainIntroSection";
-import SkillsSection from "@/components/SkillsSection";
-import EducationSection from "@/components/EducationSection";
-import ExperienceSection from "@/components/ExperienceSection";
+import {
+    MainIntroSection,
+    SkillsSection,
+    EducationSection,
+    ExperienceSection,
+    ProjectsSection,
+} from "@/components";
 const HomePage = () => {
     return (
         <>
@@ -10,6 +13,7 @@ const HomePage = () => {
             <SkillsSection />
             <EducationSection />
             <ExperienceSection />
+            <ProjectsSection />
         </>
     );
 };

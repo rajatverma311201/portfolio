@@ -1,3 +1,56 @@
+export const PROJECTS_LIST = [
+    {
+        slug: "natours-sass",
+        name: "Natours",
+        description:
+            "A beautiful Landing Page for a fictional adventour tour company",
+        descriptionSecondary: "Built while learning Advanced CSS and Sass",
+        liveLink: "https://natours-sass-web.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/natours-sass",
+        mainImage: "/projects-images/natours-sass/natours-main.png",
+        technologies: ["CSS", "Sass", "HTML"],
+        topics: [
+            "Advanced CSS and pseudo classes",
+            "CSS animations and transitions",
+            "Specificity and Cascading in CSS",
+            "Sass",
+            "7-1 Sass Architecture",
+            "Responsive Design",
+            "BEM Methodology",
+        ],
+    },
+    {
+        slug: "trillo-sass",
+        name: "Trillo",
+        description:
+            "A beautiful home page for a fictional hotel booking website",
+        descriptionSecondary: "Built while learning CSS Flexbox and Sass",
+        liveLink: "https://trillo-sass-web.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/trillo-sass",
+        mainImage: "/projects-images/trillo-sass/trillo-main.png",
+        technologies: ["CSS Flexbox", "Sass", "HTML"],
+    },
+    {
+        slug: "nexter-sass",
+        name: "Nexter",
+        description:
+            "A beautiful home page for a fictional real estate website",
+        descriptionSecondary: "Built while learning Sass and CSS Grid",
+        liveLink: "https://nexter-sass-web.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/nexter-sass",
+        mainImage: "/projects-images/nexter-sass/nexter-main.png",
+        technologies: ["CSS Grid", "Sass", "HTML"],
+        topics: [
+            "CSS",
+            "Sass",
+            "7-1 Sass Architecture",
+            "CSS Grid",
+            "Responsive Design",
+            "BEM Methodology",
+        ],
+    },
+];
+
 export const EXPERIENCE_LIST = [
     {
         company: "Nucleus Software",
@@ -10,7 +63,13 @@ export const EXPERIENCE_LIST = [
         endMonth: "May",
         endYear: "2023",
         duration: "6 months",
-        technologies: ["React", "Spring Boot", "NodeJS", "Flask", "Elastic Search"]
+        technologies: [
+            "React",
+            "Spring Boot",
+            "NodeJS",
+            "Flask",
+            "Elastic Search",
+        ],
     },
     {
         company: "Svasth 360",
@@ -23,7 +82,14 @@ export const EXPERIENCE_LIST = [
         endMonth: "April",
         endYear: "2023",
         duration: "2 months",
-        technologies: ["React Native", "NextJS", "NodeJS", "MongoDB", "Mongoose", "AgoraSDK"]
+        technologies: [
+            "React Native",
+            "NextJS",
+            "NodeJS",
+            "MongoDB",
+            "Mongoose",
+            "AgoraSDK",
+        ],
     },
     {
         company: "Plasium",
@@ -36,23 +102,28 @@ export const EXPERIENCE_LIST = [
         endMonth: "Mar",
         endYear: "2023",
         duration: "2 months",
-        technologies: ["React Native", "React", "NodeJS", "MongoDB", "Mongoose"]
+        technologies: [
+            "React Native",
+            "React",
+            "NodeJS",
+            "MongoDB",
+            "Mongoose",
+        ],
     },
     {
         company: "Anaemia Mukt Bharat, Ministry of Health and Family Welfare",
         location: "Remote",
         expType: "Internship",
-        position: "Web Developer",
+        position: "Frontend Developer",
         type: "Part Time",
         startMonth: "April",
         startYear: "2023",
         endMonth: "May",
         endYear: "2023",
         duration: "2 months",
-        technologies: ["React"]
+        technologies: ["React"],
     },
-
-]
+];
 
 export const EDUCATION_LIST = [
     {
@@ -66,7 +137,7 @@ export const EDUCATION_LIST = [
         startYear: "2020",
         endMonth: "June",
         endYear: "2024",
-        time: "2020-24"
+        time: "2020-24",
     },
     {
         institute: "St. Antony's Inter College",
@@ -77,7 +148,7 @@ export const EDUCATION_LIST = [
         startYear: "2018",
         endMonth: "March",
         endYear: "2019",
-        time: "2019"
+        time: "2019",
     },
     {
         institute: "St. Antony's Inter College",
@@ -88,9 +159,9 @@ export const EDUCATION_LIST = [
         startYear: "2016",
         endMonth: "March",
         endYear: "2017",
-        time: "2017"
+        time: "2017",
     },
-]
+];
 
 export const COURSES_LIST = [
     {
@@ -99,13 +170,10 @@ export const COURSES_LIST = [
         name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
         link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
         certificateImg: "/course-images/react-course.jpg",
-        certificateLink: "https://www.udemy.com/certificate/UC-7438d0b8-f930-4b09-bbd2-56733e310171/",
+        certificateLink:
+            "https://www.udemy.com/certificate/UC-7438d0b8-f930-4b09-bbd2-56733e310171/",
         duration: "48",
-        technologies: [
-            "React",
-            "Redux",
-            "NextJS",
-        ],
+        technologies: ["React", "Redux", "NextJS"],
         topics: [
             "React Basics and Single Page Applications",
             "React Components & Styling",
@@ -128,7 +196,7 @@ export const COURSES_LIST = [
             "React Performance Optimization",
             "React Design Patterns",
             "React with Typescript",
-        ]
+        ],
     },
     {
         slug: "nodejs-course",
@@ -136,14 +204,10 @@ export const COURSES_LIST = [
         name: "Node.js, Express, MongoDB & More: The Complete Bootcamp",
         link: "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/",
         certificateImg: "/course-images/nodejs-course.jpg",
-        certificateLink: "https://www.udemy.com/certificate/UC-6ba710f0-9f24-4581-9f52-7183902296fd/",
+        certificateLink:
+            "https://www.udemy.com/certificate/UC-6ba710f0-9f24-4581-9f52-7183902296fd/",
         duration: "42",
-        technologies: [
-            "NodeJS",
-            "Express",
-            "MongoDB",
-            "Mongoose",
-        ],
+        technologies: ["NodeJS", "Express", "MongoDB", "Mongoose"],
         topics: [
             "NodeJS Basics and Backend Development",
             "NPM and Modules and MVC Architecture",
@@ -162,16 +226,15 @@ export const COURSES_LIST = [
             "Cookies and Sessions",
             "HTTP headers and CORS",
             "Data Sanitization and Rate Limiting",
-            "Credit Card Payments with Stripe"
-        ]
+            "Credit Card Payments with Stripe",
+        ],
     },
     {
         slug: "javascript-course",
         platform: "Udemy",
         name: "The Complete JavaScript Course 2021: From Zero to Expert!",
-
-    }
-]
+    },
+];
 
 export const LANGUAGES_LIST = [
     {
