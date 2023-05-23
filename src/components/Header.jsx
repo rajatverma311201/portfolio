@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { Drawer } from "@mui/material";
+import { HiMenuAlt2 } from "react-icons/hi";
 const Header = () => {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     return (
         <>
             <div className={styles["size-box"]}></div>
@@ -19,8 +25,12 @@ const Header = () => {
                     </div>
                     <h2 className={styles["header-name"]}>Rajat Verma</h2>
                     <NavigationBar />
+                    <div className={styles["sidebar-icon"]}>
+                        <HiMenuAlt2 onClick={handleOpen} />
+                    </div>
                 </header>
             </motion.div>
+            <SideNavbar open={open} handleClose={handleClose} />
         </>
     );
 };
@@ -59,3 +69,11 @@ const NavigationBar = () => (
         </ul>
     </nav>
 );
+
+const SideNavbar = ({ open, handleClose }) => {
+    return (
+        <Drawer anchor={"left"} open={open} onClose={handleClose}>
+            <h1>HELLO WORLD</h1>
+        </Drawer>
+    );
+};

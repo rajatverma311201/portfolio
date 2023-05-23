@@ -20,14 +20,28 @@
 
 .header {
     backdrop-filter: blur(15px);
-    @include flex(0rem);
+    @include flex(0rem, center, center);
     background-color: rgba($background-color-2, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem 5rem;
     font-size: 1.75rem;
     box-shadow: $shadow-1;
     @include border-radius(10px);
-
+    @media (max-width: 768px) {
+        // justify-content: space-between;
+    }
+    .sidebar-icon {
+        display: none;
+        font-size: 3.5rem;
+        color: $color-primary;
+        cursor: pointer;
+        margin-left: auto;
+        @media (max-width: 768px) {
+            @include flex(0);
+            // display: block;
+            // margin-right: 2rem;
+        }
+    }
     &-img {
         width: 5rem;
         height: 5rem;
@@ -64,7 +78,7 @@
     }
 
     @media (max-width: 480px) {
-        padding-inline: 0;
+        padding-inline: 2rem;
     }
 }
 
