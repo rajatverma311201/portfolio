@@ -42,6 +42,7 @@
             // margin-right: 2rem;
         }
     }
+
     &-img {
         width: 5rem;
         height: 5rem;
@@ -112,4 +113,52 @@
 .active-link {
     color: $color-primary !important;
     font-weight: 600 !important;
+}
+.sidebar-container {
+    font-size: 2rem;
+    background: $background-color-1;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 2.5rem;
+    @include flex(2.5rem, flex-start, stretch, column);
+    ul {
+        flex: 1;
+        list-style: none;
+        @include flex(1rem, center, stretch, column);
+        width: 100%;
+        li {
+            width: 100%;
+        }
+        li a {
+            text-align: center;
+            color: $color-lighter;
+            padding: 1.5rem 1rem;
+            // width: 90%;
+            display: block;
+            font-weight: 500;
+        }
+    }
+    .sidebar-close-btn {
+        & > span {
+            @include flex(0, center, center);
+            font-size: 3rem;
+            cursor: pointer;
+            @include border-radius(7.5px);
+            box-shadow: $shadow-1;
+            padding: 1rem;
+            background: $background-color-1;
+        }
+        @include flex(0, flex-end, center);
+
+        color: $color-primary;
+    }
+
+    .active-link-sidebar {
+        background: $background-color-2;
+        box-shadow: $shadow-1;
+        @include border-radius(7.5px);
+
+        color: $color-primary;
+        // background-color: rgba($color-primary, 0.75);
+    }
 }

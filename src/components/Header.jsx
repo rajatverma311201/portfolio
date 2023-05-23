@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { Drawer } from "@mui/material";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -60,20 +61,49 @@ const NavigationBar = () => (
                     Projects
                 </NavLink>
             </li>
-            {/* <li>
-                <a href="#">About</a>
-            </li> */}
-            {/* <li>
-                <a href="#">Contact Me</a>
-            </li> */}
         </ul>
     </nav>
 );
 
 const SideNavbar = ({ open, handleClose }) => {
     return (
-        <Drawer anchor={"left"} open={open} onClose={handleClose}>
-            <h1>HELLO WORLD</h1>
+        <Drawer
+            sx={{ backdropFilter: "blur(5px)" }}
+            anchor={"left"}
+            open={open}
+            onClose={handleClose}
+        >
+            <div className={styles["sidebar-container"]}>
+                <div className={styles["sidebar-close-btn"]}>
+                    <span onClick={handleClose}>
+                        <AiOutlineClose />
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <NavLink
+                            onClick={handleClose}
+                            className={({ isActive }) =>
+                                isActive ? styles["active-link-sidebar"] : ""
+                            }
+                            to="/"
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            onClick={handleClose}
+                            className={({ isActive }) =>
+                                isActive ? styles["active-link-sidebar"] : ""
+                            }
+                            to="/projects"
+                        >
+                            Projects
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
         </Drawer>
     );
 };
