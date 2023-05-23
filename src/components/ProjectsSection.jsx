@@ -7,6 +7,7 @@ import { PROJECTS_LIST } from "@/assets/data";
 import { Modal, Box } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { TbExternalLink } from "react-icons/tb";
+import { ProjectCard } from "@/components";
 const ProjectsSection = () => {
     const PROJECTS = PROJECTS_LIST.slice(0, 3);
     const [open, setOpen] = useState(false);
@@ -105,35 +106,6 @@ const styleModalBox = {
     // boxShadow: 24,
     outline: "none",
 };
-
-const ProjectCard = ({ project, handleOpen }) => (
-    <div className={styles["project"]} onClick={(e) => handleOpen(project)}>
-        <div className={styles["project-img"]}>
-            <img
-                src={project.mainImage}
-                alt={project.name}
-                className={styles["project-img__item"]}
-            />
-        </div>
-        <h3 className={styles["project-name"]}>{project.name}</h3>
-
-        <div className={styles["project-tech"]}>
-            {project.technologies.map((tech) => (
-                <span key={tech} className={styles["project-tech__item"]}>
-                    {tech}
-                </span>
-            ))}
-        </div>
-        <div className={styles["project-desc"]}>
-            <p className={styles["project-desc__item"]}>
-                {project.description}
-            </p>
-            <p className={styles["project-desc__item"]}>
-                {project.descriptionSecondary}
-            </p>
-        </div>
-    </div>
-);
 
 const defaultOptions = {
     reverse: true, // reverse the tilt direction

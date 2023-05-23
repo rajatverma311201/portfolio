@@ -57,6 +57,71 @@ export const PROJECTS_LIST = [
             "BEM Methodology",
         ],
     },
+    {
+        slug: "omnifood-html-css",
+        name: "Omnifood",
+        description:
+            "A beautiful home page for a food delivery website using HTML and CSS",
+        descriptionSecondary:
+            "Built while learning HTML, CSS, Responsive Design",
+        liveLink: "https://omnifood-html-css-rv.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/omnifood-html-css",
+        mainImage: "/projects-images/omnifood-html-css/omnifood-main.png",
+        technologies: ["CSS", "CSS Grid", "CSS Flexbox", "HTML"],
+        topics: [
+            "CSS",
+            "CSS Grid",
+            "CSS Flexbox",
+            "Responsive Design",
+            "BEM Methodology",
+            "Netlify Forms",
+        ],
+    },
+    {
+        slug: "forkify-app-javascript",
+        name: "Forkify",
+        description:
+            "A webapp to search for recipes and save them to your favourites",
+        descriptionSecondary:
+            "Built while learning JavaScript, ES6, Parcel, MVC",
+        liveLink: "https://forkify-app-js-rajat.netlify.app/",
+        githubLink:
+            "https://github.com/rajatverma311201/forkify-app-javascript",
+        mainImage: "/projects-images/forkify-app-javascript/forkify-main.png",
+        technologies: ["JavaScript", "Sass", "Parcel", "ES6"],
+        topics: [
+            "Javascript",
+            "Advanced DOM Manipulation",
+            "ES6",
+            "Parcel",
+            "MVC",
+            "APIs",
+            "Asynchronous JavaScript",
+            "Netlify Forms",
+        ],
+    },
+    {
+        slug: "mapty-app",
+        name: "Mapty",
+        description:
+            "A simple webapp to log your running and cycling on a map using the Geolocation API and Leaflet Maps",
+        descriptionSecondary:
+            "Built while learning JavaScript, ES6, Object Oriented Programming, GeoLocation API",
+        liveLink: "https://rajatverma311201.github.io/Mapty-App/",
+        githubLink: "https://github.com/rajatverma311201/Mapty-App",
+        mainImage: "/projects-images/mapty-app/mapty-main.png",
+        technologies: ["JavaScript", "ES6", "OOPs"],
+        topics: [
+            "Javascript",
+            "Advanced DOM Manipulation",
+            "ES6",
+            "Parcel",
+            "MVC",
+            "APIs",
+            "Asynchronous JavaScript",
+            "Netlify Forms",
+        ],
+    },
 ];
 
 export const EXPERIENCE_LIST = [

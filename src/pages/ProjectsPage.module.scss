@@ -1,0 +1,6 @@
+@import "@/sass/main";
+.projects-list {
+    margin-top: 10rem;
+    @include flex(5rem, center, stretch);
+    flex-wrap: wrap;
+}

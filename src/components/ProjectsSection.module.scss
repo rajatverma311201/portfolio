@@ -41,97 +41,13 @@
         font-size: 5rem;
         margin-right: 2rem;
     }
-
-    .projects-list {
-        margin-top: 10rem;
-        @include flex(5rem, center, stretch);
-        flex-wrap: wrap;
-
-        .project {
-            position: relative;
-            cursor: pointer;
-            &:hover .project-img__item {
-                @include transform(scale(1.1));
-                @include filter(saturate(0.5));
-            }
-            width: 30rem;
-            padding-bottom: 2rem;
-            background: $background-color-2;
-            @include border-radius(7.5px);
-            box-shadow: $shadow-1;
-
-            & > * {
-                padding-inline: 1.5rem;
-            }
-            &-img {
-                padding: 0;
-                border: none;
-                width: 100%;
-                overflow: hidden;
-                @include border-radius(inherit);
-                border-bottom-left-radius: unset;
-                border-bottom-right-radius: unset;
-
-                max-height: 12.5rem;
-                &__item {
-                    // max-height: 12.5rem;
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-
-                    @include transition(all 0.25s ease-in-out);
-                }
-            }
-
-            &-name {
-                position: absolute;
-                text-align: center;
-                display: inline-block;
-                background: rgba($background-color-2, 0.1);
-
-                backdrop-filter: blur(25px);
-                // @include border-radius(5px);
-                // border-bottom-left-radius: 0;
-                border-top-right-radius: 5px;
-                color: $color-light;
-                font-size: 1.75rem;
-                font-family: $font-secondary;
-                text-transform: uppercase;
-                font-weight: 700;
-                padding: 1rem 2rem;
-                @include transform(translateY(-100%));
-            }
-
-            &-tech {
-                @include flex(1rem, flex-start);
-                margin: 1.25rem auto;
-
-                &__item {
-                    box-shadow: $shadow-2;
-                    padding: 0.25rem 0.75rem;
-                    color: $color-lighter;
-                    font-size: 1.1rem;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    @include border-radius(5px);
-                }
-            }
-
-            &-desc {
-                color: $color-lighter;
-                font-size: 1.25rem;
-                font-weight: 400;
-
-                &__item {
-                    &:not(:last-child) {
-                        margin-bottom: 1rem;
-                    }
-                }
-            }
-        }
-    }
 }
 
+.projects-list {
+    margin-top: 10rem;
+    @include flex(5rem, center, stretch);
+    flex-wrap: wrap;
+}
 .modal-project {
     background: rgba($background-color-2, 0.75);
     // backdrop-filter: blur(10px);
@@ -149,7 +65,7 @@
     &-topic-list {
         list-style: none;
         columns: 2;
-    
+
         &__item {
         }
     }

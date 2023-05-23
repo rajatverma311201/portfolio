@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "@/sass/main.scss";
-import Header from "@/components/Header";
-import HomePage from "./pages/HomePage";
+import { Header } from "@/components";
+import { HomePage, ProjectsPage } from "./pages";
+
 import "./App.css";
 import {
     motion,
@@ -10,9 +11,12 @@ import {
     useMotionValueEvent,
 } from "framer-motion";
 
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
 import { FiArrowUp } from "react-icons/fi";
 import { FaReact, FaSass } from "react-icons/fa";
-function App() {
+
+const AppLayout = ({ children }) => {
     const { scrollYProgress, scrollY } = useScroll();
     const [showButton, setShowButton] = useState(false);
 
@@ -37,7 +41,7 @@ function App() {
             />
             <Header />
             <main>
-                <HomePage />
+                <Outlet />
             </main>
 
             <AnimatePresence>
@@ -71,6 +75,27 @@ function App() {
             </footer>
         </>
     );
+};
+
+const router = createBrowserRouter([
+    {
+        element: <AppLayout />,
+        children: [
+            {
+                path: "/",
+                element: <HomePage />,
+            },
+            {
+                path: "/projects",
+                element: <ProjectsPage />,
+            },
+        ],
+    },
+]);
+
+function App() {
+    // return <AppLayout />;
+    return <RouterProvider router={router} />;
 }
 
 export default App;

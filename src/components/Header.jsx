@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <>
@@ -30,7 +31,25 @@ const NavigationBar = () => (
     <nav className={styles["main-nav"]}>
         <ul>
             <li>
-                <a href="/">Home</a>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? styles["active-link"] : ""
+                    }
+                    to="/"
+                    // end
+                >
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? styles["active-link"] : ""
+                    }
+                    to="/projects"
+                >
+                    Projects
+                </NavLink>
             </li>
             {/* <li>
                 <a href="#">About</a>

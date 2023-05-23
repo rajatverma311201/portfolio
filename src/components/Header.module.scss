@@ -72,8 +72,9 @@
     margin-left: auto;
 
     & > ul {
-        font-size: 1.9rem;
-        @include flex(2rem);
+        font-size: 1.75rem;
+        @include flex(2.5rem);
+        font-weight: 500;
         list-style: none;
         margin-left: auto;
         text-transform: uppercase;
@@ -81,9 +82,10 @@
         a {
             color: $color-lighter;
             text-decoration: none;
+            @include transition(all 0.1s ease-in-out);
             &:hover {
-                color: $color-secondary;
-                text-shadow: 0 0 2px $color-secondary;
+                color: $color-lighter;
+                text-shadow: 0 0 1px $color-secondary;
             }
         }
     }
@@ -91,4 +93,9 @@
     @media (max-width: 768px) {
         display: none;
     }
+}
+
+.active-link {
+    color: $color-primary !important;
+    font-weight: 600 !important;
 }
