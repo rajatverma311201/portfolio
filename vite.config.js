@@ -8,4 +8,19 @@ export default defineConfig({
     resolve: {
         alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
     },
+    build: {
+        rollupOptions: {
+            input: {
+                main: "./index.html",
+            },
+            output: {
+                manualChunks: undefined,
+            },
+            manualChunks(id) {
+                if (id.includes("_redirects")) {
+                    return "ignored";
+                }
+            },
+        },
+    },
 });
