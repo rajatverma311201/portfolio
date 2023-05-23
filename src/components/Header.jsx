@@ -36,7 +36,6 @@ const NavigationBar = () => (
                         isActive ? styles["active-link"] : ""
                     }
                     to="/"
-                    // end
                 >
                     Home
                 </NavLink>
