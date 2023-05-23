@@ -10,9 +10,10 @@ export const PROJECTS_LIST = [
         mainImage: "/projects-images/natours-sass/natours-main.png",
         technologies: ["CSS", "Sass", "HTML"],
         topics: [
-            "Advanced CSS and pseudo classes",
-            "CSS animations and transitions",
-            "Specificity and Cascading in CSS",
+            "Advanced CSS",
+            "Pseudo classes & elements",
+            "CSS animations",
+            "Specificity and Cascading",
             "Sass",
             "7-1 Sass Architecture",
             "Responsive Design",
@@ -29,6 +30,13 @@ export const PROJECTS_LIST = [
         githubLink: "https://github.com/rajatverma311201/trillo-sass",
         mainImage: "/projects-images/trillo-sass/trillo-main.png",
         technologies: ["CSS Flexbox", "Sass", "HTML"],
+        topics: [
+            "CSS Flexbox",
+            "Pseudo elements and classes",
+            "7-1 Sass Architecture",
+            "Responsive Design",
+            "BEM Methodology",
+        ],
     },
     {
         slug: "nexter-sass",
