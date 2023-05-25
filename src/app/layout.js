@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
                     src="https://www.googletagmanager.com/gtag/js?id=G-3M5ST3C172"
                 />
                 <Script
+                    id="google-analytics"
                     strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `   window.dataLayer = window.dataLayer || [];
