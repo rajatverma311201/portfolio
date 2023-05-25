@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 import styles from "./ProjectsSection.module.scss";
@@ -8,6 +9,7 @@ import { Modal, Box } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { TbExternalLink } from "react-icons/tb";
 import { ProjectCard } from "@/components";
+import Image from "next/image";
 const ProjectsSection = () => {
     const PROJECTS = PROJECTS_LIST.slice(0, 3);
     const [open, setOpen] = useState(false);
@@ -38,7 +40,9 @@ const ProjectsSection = () => {
                     className={styles["main-logo-img-container"]}
                 >
                     <Tilt options={defaultOptions}>
-                        <img
+                        <Image
+                            width={400}
+                            height={400}
                             src="/project-logo.svg"
                             alt=""
                             className={styles["main-logo-img"]}

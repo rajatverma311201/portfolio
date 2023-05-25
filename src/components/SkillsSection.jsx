@@ -8,7 +8,7 @@ import {
     TOOLS_LIST,
     DATABASE_SKILLS_LIST,
 } from "@/assets/data";
-
+import Image from "next/image";
 const SkillsSection = () => {
     return (
         <div className={styles["skills-main-container"]}>
@@ -78,7 +78,9 @@ const Languages = () => (
         <div className={styles["skills-list"]}>
             {LANGUAGES_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
-                    <img
+                    <Image
+                        width={100}
+                        height={100}
                         className={`${styles["skill__logo"]} ${
                             ["Java"].includes(skill.name)
                                 ? styles["skill__logo--mod"]
@@ -107,7 +109,9 @@ const WebSkills = () => (
         <div className={styles["skills-list"]}>
             {WEB_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
-                    <img
+                    <Image
+                        width={100}
+                        height={100}
                         className={`${styles["skill__logo"]} ${
                             ["Express", "MongoDB", "NodeJS"].includes(
                                 skill.name
@@ -147,7 +151,9 @@ const MobileSkills = () => (
         <div className={styles["skills-list"]}>
             {MOBILE_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
-                    <img
+                    <Image
+                        width={100}
+                        height={100}
                         className={`${styles["skill__logo"]} ${
                             ["React Native"].includes(skill.name)
                                 ? styles["skill__logo--mod3"]
@@ -177,7 +183,9 @@ const DBSkills = () => (
         <div className={styles["skills-list"]}>
             {DATABASE_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
-                    <img
+                    <Image
+                        width={100}
+                        height={100}
                         className={`${styles["skill__logo"]} ${
                             ["MongoDB"].includes(skill.name)
                                 ? styles["skill__logo--mod"]
@@ -211,7 +219,9 @@ const Tools = () => (
         <div className={styles["skills-list"]}>
             {TOOLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
-                    <img
+                    <Image
+                        width={100}
+                        height={100}
                         className={`${styles["skill__logo"]} ${
                             ["Postman"].includes(skill.name)
                                 ? styles["skill__logo--mod4"]

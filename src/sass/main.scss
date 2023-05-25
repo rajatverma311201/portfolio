@@ -2,25 +2,21 @@
 @import "@/sass/variables";
 @import "@/sass/mixins";
 
-body {
+#body {
     background: $background-color-2;
     position: relative;
-    // padding: 1rem;
     padding-top: 2.5rem;
     font-family: $font-primary;
-    // overflow: hidden;
 }
 
-html {
+#html {
     scroll-behavior: smooth;
 }
 
-main {
-    // padding: 5;
+#main {
     padding-inline: 5rem;
     padding-bottom: 5rem;
     margin-top: 5rem;
-    // overflow: hidden;
     overflow-x: hidden;
 }
 
@@ -33,9 +29,6 @@ main {
     z-index: 1000000;
     background: $color-primary;
     transform-origin: 0%;
-}
-h1 {
-    color: aliceblue;
 }
 
 #scroll-to-top {
@@ -59,12 +52,12 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    main {
+    #main {
         padding-inline: 2rem;
     }
 }
 
-footer h2 {
+#footer h2 {
     font-family: $font-secondary;
     font-weight: 600;
     color: $color-primary;

@@ -1,37 +1,29 @@
 {
-  "name": "my-portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.13.1",
-    "framer-motion": "^10.12.12",
-    "lottie-react": "^2.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "react-router-dom": "^6.11.2",
-    "react-tilt": "^1.0.2",
-    "react-tooltip": "^5.13.1",
-    "sass": "^1.62.1"
-  },
-  "devDependencies": {
-    "@rollup/plugin-alias": "^5.0.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.3.2"
-  }
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Rajat Verma",
+    "description": "My Portfolio",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.13.2",
+        "eslint": "8.41.0",
+        "eslint-config-next": "13.4.3",
+        "framer-motion": "^10.12.16",
+        "lottie-react": "^2.4.0",
+        "next": "13.4.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-icons": "^4.8.0",
+        "react-tilt": "^1.0.2",
+        "sass": "^1.62.1",
+        "sharp": "^0.32.1"
+    }
 }

@@ -1,53 +1,9 @@
-import React from "react";
-import styles from "./EducationSection.module.scss";
+"use client";
+import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import { MdOutlineSchool } from "react-icons/md";
-import { EDUCATION_LIST } from "@/assets/data";
-
-import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import { Tilt } from "react-tilt";
-
-const EducationSection = () => {
-    return (
-        <section className={styles["container"]}>
-            <motion.div
-                viewport={{ once: true }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                    delay: 0.5,
-                    duration: 0.5,
-                }}
-                className={styles["education-icon-container"]}
-            >
-                <MdOutlineSchool className={styles["education-icon"]} />
-            </motion.div>
-            <motion.h2
-                viewport={{ once: true }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                    delay: 0.75,
-                    duration: 0.5,
-                }}
-                className={styles["education-main-heading"]}
-            >
-                My{" "}
-                <span className={styles["heading-highlight"]}>Education</span>
-            </motion.h2>
-
-            <div className={styles["edu-list"]}>
-                {EDUCATION_LIST.map((edu, idx) => (
-                    <EduCard edu={edu} idx={idx} key={idx} styles={styles} />
-                ))}
-            </div>
-        </section>
-    );
-};
-
-export default EducationSection;
-
+import styles from "./EducationSection.module.scss";
 const EduCard = ({ edu, idx }) => (
     <Tilt options={defaultOptions}>
         <motion.div
@@ -99,6 +55,7 @@ const EduCard = ({ edu, idx }) => (
     </Tilt>
 );
 
+export default EduCard;
 const defaultOptions = {
     reverse: true, // reverse the tilt direction
     max: 30, // max tilt rotation (degrees)

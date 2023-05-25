@@ -24,7 +24,7 @@ const MainIntroSection = () => {
                     Welcome to my portfolio
                 </h3>
                 <h1 className={styles["intro-text"]}>
-                    Hi, I'm
+                    Hi, I&apos;m
                     <br />{" "}
                     <motion.div className={styles["name"]}>
                         Rajat Verma

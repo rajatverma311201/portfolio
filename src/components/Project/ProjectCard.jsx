@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./ProjectCard.module.scss";
+import Image from "next/image";
 
 const ProjectCard = ({ project, handleOpen }) => (
     <div className={styles["project"]} onClick={(e) => handleOpen(project)}>
         <div className={styles["project-img"]}>
-            <img
+            <Image
+                width={500}
+                height={500}
                 src={project.mainImage}
                 alt={project.name}
                 className={styles["project-img__item"]}

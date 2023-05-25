@@ -1,51 +1,12 @@
+"use client";
 import React from "react";
-import styles from "./ExperienceSection.module.scss";
-import { MdWork } from "react-icons/md";
 import { motion } from "framer-motion";
-import { EXPERIENCE_LIST } from "@/assets/data";
+
 import { Tilt } from "react-tilt";
+import styles from "./ExperienceSection.module.scss";
 
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
-const ExperienceSection = () => {
-    return (
-        <section className={styles["container"]}>
-            <motion.div
-                viewport={{ once: true }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                    delay: 0.5,
-                    duration: 0.5,
-                }}
-                className={styles["experience-icon-container"]}
-            >
-                <MdWork className={styles["experience-icon"]} />
-            </motion.div>
-            <motion.h2
-                viewport={{ once: true }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                    delay: 0.75,
-                    duration: 0.5,
-                }}
-                className={styles["experience-main-heading"]}
-            >
-                My{" "}
-                <span className={styles["heading-highlight"]}>Experience</span>
-            </motion.h2>
-            <div className={styles["edu-list"]}>
-                {EXPERIENCE_LIST.map((exp, idx) => (
-                    <ExpCard exp={exp} idx={idx} key={idx} styles={styles} />
-                ))}
-            </div>
-        </section>
-    );
-};
-
-export default ExperienceSection;
-
-const ExpCard = ({ exp, idx }) => (
+const ExperienceCard = ({ exp, idx }) => (
     <Tilt options={defaultOptions}>
         <motion.div
             viewport={{ once: true }}
@@ -117,3 +78,5 @@ const defaultOptions = {
     reset: true, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
+
+export default ExperienceCard;

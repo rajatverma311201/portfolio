@@ -1,8 +1,13 @@
-export { default as EducationSection } from "./EducationSection";
-export { default as ExperienceSection } from "./ExperienceSection";
-export { default as ProjectsSection } from "./ProjectsSection";
+"use client";
+export { default as EducationSection } from "./Education/EducationSection";
+export { default as EduCard } from "./Education/EduCard";
+export { default as ExperienceSection } from "./Experience/ExperienceSection";
+export { default as ExperienceCard } from "./Experience/ExperienceCard";
+export { default as ProjectsSection } from "./Project/ProjectsSection";
 export { default as SkillsSection } from "./SkillsSection";
 export { default as MainIntroSection } from "./MainIntroSection";
 export { default as Header } from "./Header";
 export { default as ContactForm } from "./ContactForm";
-export { default as ProjectCard } from "./ProjectCard";
+export { default as ProjectCard } from "./Project/ProjectCard";
+export { default as ScrollToTopBtn } from "./ScrollToTopBtn";
+export { default as ProgressBar } from "./ProgressBar";

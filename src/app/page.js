@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import {
     MainIntroSection,
     SkillsSection,
@@ -6,7 +7,8 @@ import {
     ExperienceSection,
     ProjectsSection,
 } from "@/components";
-const HomePage = () => {
+
+export default function Home() {
     return (
         <>
             <MainIntroSection />
@@ -16,6 +18,4 @@ const HomePage = () => {
             <ProjectsSection />
         </>
     );
-};
-
-export default HomePage;
+}
