@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rajat-verma.netlify.app/sitemap.xml
