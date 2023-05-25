@@ -88,7 +88,7 @@ const HeadTag = () => (
         />
         <meta
             name="keywords"
-            content="Full Stack, Rajat Verma, IIT Mandi, Indian Institute of Technology Mandi, Javascript Developer, Mobile Development, MERN Stack, MERN Developer, React, React Native, Flutter, NextJS, NodeJS, Express, NestJS, Mongoose, MongoDB, Sass, HTML, CSS, Django, Flask, SQL, Python, Java, Spring Boot, MySQL, PostgreSQL, BTech Rajat Verma, Bachelor of Technology Rajat Verma, Rajat Verma Portfolio, Rajat Verma IIT"
+            content="Full Stack, Rajat Verma, IIT Mandi, Indian Institute of Technology Mandi, Javascript Developer, Mobile Development, MERN Stack, MERN Developer, React, React Native, Flutter, NextJS, NodeJS, Express, NestJS, Mongoose, MongoDB, Sass, HTML, CSS, Django, Flask, SQL, Python, Java, Spring Boot, MySQL, PostgreSQL, BTech Rajat Verma, Bachelor of Technology Rajat Verma, Rajat Verma Portfolio, Rajat Verma IIT, Rajat Verma Portfolio, Portfolio Rajat Verma, Portfolio of Rajat Verma"
         />
         <meta name="author" content="Rajat Verma" />
         <title>Rajat Verma | Portfolio</title>
