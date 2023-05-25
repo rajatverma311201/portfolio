@@ -38,6 +38,10 @@ export default function RootLayout({ children }) {
 const HeadTag = () => (
     <head>
         <meta charSet="UTF-8" />
+        <meta
+            name="google-site-verification"
+            content="5y8wc-GiTMVgLeH3ESsb4mXfJRDjwTzGVPQ7JWrAfTU"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
