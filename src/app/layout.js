@@ -6,6 +6,7 @@ import "@/sass/main.scss";
 import { Header, ScrollToTopBtn, ProgressBar } from "@/components";
 
 import "./globals.css";
+import Script from "next/script";
 
 export default function RootLayout({ children }) {
     return (
@@ -30,6 +31,21 @@ export default function RootLayout({ children }) {
                         </span>
                     </h2>
                 </footer>
+                <Script
+                    strategy="afterInteractive"
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-3M5ST3C172"
+                />
+                <Script
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `   window.dataLayer = window.dataLayer || [];
+                                    function gtag(){dataLayer.push(arguments);}
+                                    gtag('js', new Date());
+                                    gtag('config', 'G-3M5ST3C172');
+                                `,
+                    }}
+                />
             </body>
         </html>
     );
