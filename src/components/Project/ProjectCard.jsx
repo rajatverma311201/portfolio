@@ -6,6 +6,7 @@ const ProjectCard = ({ project, handleOpen }) => (
     <div className={styles["project"]} onClick={(e) => handleOpen(project)}>
         <div className={styles["project-img"]}>
             <Image
+                loading="lazy"
                 width={500}
                 height={500}
                 src={project.mainImage}

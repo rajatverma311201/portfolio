@@ -79,6 +79,7 @@ const Languages = () => (
             {LANGUAGES_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
                     <Image
+                        loading="lazy"
                         width={100}
                         height={100}
                         className={`${styles["skill__logo"]} ${
@@ -110,6 +111,7 @@ const WebSkills = () => (
             {WEB_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
                     <Image
+                        loading="lazy"
                         width={100}
                         height={100}
                         className={`${styles["skill__logo"]} ${
@@ -152,6 +154,7 @@ const MobileSkills = () => (
             {MOBILE_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
                     <Image
+                        loading="lazy"
                         width={100}
                         height={100}
                         className={`${styles["skill__logo"]} ${
@@ -184,6 +187,7 @@ const DBSkills = () => (
             {DATABASE_SKILLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
                     <Image
+                        loading="lazy"
                         width={100}
                         height={100}
                         className={`${styles["skill__logo"]} ${
@@ -220,6 +224,7 @@ const Tools = () => (
             {TOOLS_LIST.map((skill) => (
                 <div className={styles["skill"]} key={skill.name}>
                     <Image
+                        loading="lazy"
                         width={100}
                         height={100}
                         className={`${styles["skill__logo"]} ${

@@ -35,9 +35,6 @@ const ScrollToTopBtn = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0 }}
                     id="scroll-to-top"
-                    // transition={{
-                    //     duration: 0.5,
-                    // }}
                 >
                     <FiArrowUp />
                 </motion.span>

@@ -13,7 +13,7 @@ const MainIntroSection = () => {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                    delay: 1,
+                    delay: 0.75,
                     duration: 0.5,
                     type: "spring",
                     stiffness: 250,

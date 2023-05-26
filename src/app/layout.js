@@ -1,14 +1,31 @@
 "use client";
 
 import { FaReact, FaSass } from "react-icons/fa";
-
+import { useEffect, useState } from "react";
 import "@/sass/main.scss";
 import { Header, ScrollToTopBtn, ProgressBar } from "@/components";
 
 import "./globals.css";
 import Script from "next/script";
+// import { COLOR_THEMES_LIST } from "@/assets/data";
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 export default function RootLayout({ children }) {
+    // const [finalColor, setFinalColor] = useState(
+    //     COLOR_THEMES_LIST[0]
+    // );
+    useEffect(() => {
+        const root = document.documentElement;
+
+        // root.style.setProperty("--primary-color", finalColor);
+    }, []);
     return (
         <html lang="en" id="html">
             <HeadTag />

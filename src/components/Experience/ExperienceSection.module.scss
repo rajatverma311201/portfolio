@@ -1,4 +1,4 @@
-// @import "@/sass/main";
+@import "@/sass/main";
 @import "@/components/Education/EducationSection.module.scss";
 
 .container {
@@ -29,12 +29,13 @@
 
         .experience-icon {
             font-size: 7.5rem;
-            background: rgba($color-primary, 0.75);
+            // background-color: rgba($color-primary, 0.75);
+            // background-color: $color-primary;
             display: flex;
             padding: 1rem;
             @include border-radius(50%);
-            color: $color-lighter;
-            outline: rgba($color-primary, 0.25) solid 10px;
+            color: $color-primary;
+            // outline: rgba($color-primary, 0.25) solid 10px;
         }
     }
 
@@ -50,7 +51,7 @@
         }
         &__long {
             font-size: 1.5rem;
-            color: $color-subtitle;
+            color: $color-primary;
         }
     }
     .tech-list {

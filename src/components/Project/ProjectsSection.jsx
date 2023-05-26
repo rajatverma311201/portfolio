@@ -41,6 +41,7 @@ const ProjectsSection = () => {
                 >
                     <Tilt options={defaultOptions}>
                         <Image
+                            loading="lazy"
                             width={400}
                             height={400}
                             src="/project-logo.svg"

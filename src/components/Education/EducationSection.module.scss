@@ -29,11 +29,10 @@
 
         .education-icon {
             font-size: 7.5rem;
-            background: rgba($color-primary, 0.75);
             display: flex;
             padding: 1rem;
             @include border-radius(50%);
-            color: $color-lighter;
+            color: $color-primary;
             outline: rgba($color-primary, 0.25) solid 10px;
         }
     }
@@ -73,7 +72,7 @@
                 @include flex(0.5rem, flex-start, center);
 
                 &__short {
-                    color: $color-subtitle;
+                    color: $color-primary;
                     font-size: 1.6rem;
                     font-weight: 600;
                 }
@@ -91,7 +90,7 @@
 
                 &__icon {
                     font-size: 1.75rem;
-                    color: $color-subtitle;
+                    color: $color-primary;
                     display: flex;
                 }
                 &__text {

@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: "#fcae1e";
+}
 html {
     font-size: 62.5%;
     -webkit-tap-highlight-color: transparent;

@@ -25,5 +25,8 @@
         "react-tilt": "^1.0.2",
         "sass": "^1.62.1",
         "sharp": "^0.32.1"
+    },
+    "devDependencies": {
+        "@types/node": "20.2.4"
     }
 }

@@ -44,6 +44,7 @@
     }
 
     &-img {
+        cursor: pointer;
         width: 5rem;
         height: 5rem;
         margin-right: 2rem;
@@ -52,7 +53,7 @@
         outline: $color-body 2px solid;
         outline-offset: 2px;
         @include border-radius(50%);
-        @include transition(all 0.5s ease-in-out);
+        // @include transition(all 0.5s ease-in-out);
 
         &:hover img {
             @include transform(scale(1.1));
@@ -72,6 +73,7 @@
     }
 
     &-name {
+        cursor: pointer;
         font-size: 2.5rem;
         font-weight: 600;
         color: $color-primary;
@@ -147,8 +149,9 @@
             box-shadow: $shadow-1;
             padding: 1rem;
             background: $background-color-1;
+            margin-left: auto;
         }
-        @include flex(0, flex-end, center);
+        @include flex(0, space-around, center);
 
         color: $color-primary;
     }
@@ -160,5 +163,43 @@
 
         color: $color-primary;
         // background-color: rgba($color-primary, 0.75);
+    }
+}
+
+.color-themes-choice {
+    margin-left: auto;
+    margin-right: auto;
+    @include flex(1rem, center, center);
+    & span {
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+        content: " ";
+        display: inline-block;
+        @include border-radius(50%);
+    }
+}
+
+.color-theme-selector-desktop {
+    @include flex(0, center, center);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-theme-selector-mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .color-theme-selector-mobile {
+        display: unset;
+    }
+    .color-theme-selector-desktop {
+        display: none;
+    }
+    .color-themes-choice {
+        span {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
     }
 }

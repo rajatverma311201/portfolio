@@ -74,6 +74,9 @@
     span {
         font-size: 5rem;
         display: flex;
+        &:first-child {
+            color: #00bfff;
+        }
         &:last-child {
             color: #c69;
         }
