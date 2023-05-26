@@ -31,6 +31,7 @@ export const PROJECTS_LIST = [
             "Payments using Stripe",
         ],
     },
+
     {
         slug: "forkify-app-javascript",
         name: "Forkify",
@@ -54,6 +55,7 @@ export const PROJECTS_LIST = [
             "Netlify Forms",
         ],
     },
+
     {
         slug: "mapty-app",
         name: "Mapty",
@@ -76,6 +78,7 @@ export const PROJECTS_LIST = [
             "Netlify Forms",
         ],
     },
+
     {
         slug: "natours-sass",
         name: "Natours",
@@ -97,61 +100,7 @@ export const PROJECTS_LIST = [
             "BEM Methodology",
         ],
     },
-    {
-        slug: "tourist-css",
-        name: "Tourist",
-        description:
-            "A beautiful responsive home page for a travelling website",
-        descriptionSecondary: "A fun project for refreshing my css skills",
-        liveLink: "https://rajatverma311201.github.io/Tourist",
-        githubLink: "https://github.com/rajatverma311201/Tourist",
-        mainImage: "/projects-images/tourist-css/tourist-main.png",
-        technologies: ["CSS", "Javascript", "HTML"],
-        topics: [
-            "CSS Flexbox",
-            "CSS Grid",
-            "Javascript",
-            "HTML",
-            "Responsive Design",
-        ],
-    },
-    {
-        slug: "trillo-sass",
-        name: "Trillo",
-        description:
-            "A beautiful home page for a fictional hotel booking website",
-        descriptionSecondary: "Built while learning CSS Flexbox and Sass",
-        liveLink: "https://trillo-sass-web.netlify.app/",
-        githubLink: "https://github.com/rajatverma311201/trillo-sass",
-        mainImage: "/projects-images/trillo-sass/trillo-main.png",
-        technologies: ["CSS Flexbox", "Sass", "HTML"],
-        topics: [
-            "CSS Flexbox",
-            "Pseudo elements and classes",
-            "7-1 Sass Architecture",
-            "Responsive Design",
-            "BEM Methodology",
-        ],
-    },
-    {
-        slug: "nexter-sass",
-        name: "Nexter",
-        description:
-            "A beautiful home page for a fictional real estate website",
-        descriptionSecondary: "Built while learning Sass and CSS Grid",
-        liveLink: "https://nexter-sass-web.netlify.app/",
-        githubLink: "https://github.com/rajatverma311201/nexter-sass",
-        mainImage: "/projects-images/nexter-sass/nexter-main.png",
-        technologies: ["CSS Grid", "Sass", "HTML"],
-        topics: [
-            "CSS",
-            "Sass",
-            "7-1 Sass Architecture",
-            "CSS Grid",
-            "Responsive Design",
-            "BEM Methodology",
-        ],
-    },
+
     {
         slug: "omnifood-html-css",
         name: "Omnifood",
@@ -170,6 +119,64 @@ export const PROJECTS_LIST = [
             "Responsive Design",
             "BEM Methodology",
             "Netlify Forms",
+        ],
+    },
+
+    {
+        slug: "tourist-css",
+        name: "Tourist",
+        description:
+            "A beautiful responsive home page for a travelling website",
+        descriptionSecondary: "A fun project for refreshing my css skills",
+        liveLink: "https://rajatverma311201.github.io/Tourist",
+        githubLink: "https://github.com/rajatverma311201/Tourist",
+        mainImage: "/projects-images/tourist-css/tourist-main.png",
+        technologies: ["CSS", "Javascript", "HTML"],
+        topics: [
+            "CSS Flexbox",
+            "CSS Grid",
+            "Javascript",
+            "HTML",
+            "Responsive Design",
+        ],
+    },
+
+    {
+        slug: "trillo-sass",
+        name: "Trillo",
+        description:
+            "A beautiful home page for a fictional hotel booking website",
+        descriptionSecondary: "Built while learning CSS Flexbox and Sass",
+        liveLink: "https://trillo-sass-web.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/trillo-sass",
+        mainImage: "/projects-images/trillo-sass/trillo-main.png",
+        technologies: ["CSS Flexbox", "Sass", "HTML"],
+        topics: [
+            "CSS Flexbox",
+            "Pseudo elements and classes",
+            "7-1 Sass Architecture",
+            "Responsive Design",
+            "BEM Methodology",
+        ],
+    },
+
+    {
+        slug: "nexter-sass",
+        name: "Nexter",
+        description:
+            "A beautiful home page for a fictional real estate website",
+        descriptionSecondary: "Built while learning Sass and CSS Grid",
+        liveLink: "https://nexter-sass-web.netlify.app/",
+        githubLink: "https://github.com/rajatverma311201/nexter-sass",
+        mainImage: "/projects-images/nexter-sass/nexter-main.png",
+        technologies: ["CSS Grid", "Sass", "HTML"],
+        topics: [
+            "CSS",
+            "Sass",
+            "7-1 Sass Architecture",
+            "CSS Grid",
+            "Responsive Design",
+            "BEM Methodology",
         ],
     },
 ];
