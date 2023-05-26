@@ -3,7 +3,7 @@ export const PROJECTS_LIST = [
         slug: "adventour-app",
         name: "Adventour",
         description:
-            "A Server Side Rendered Website for Booking Tours using Server Side Javascript",
+            "A Server Side Rendered Website for Booking Adventure Tours",
         descriptionSecondary:
             "Built while learning NodeJS, Express, Mongoose, MongoDB",
         liveLink: "https://adventour-production.up.railway.app/",
@@ -32,6 +32,51 @@ export const PROJECTS_LIST = [
         ],
     },
     {
+        slug: "forkify-app-javascript",
+        name: "Forkify",
+        description:
+            "A webapp to search for recipes and save them to your favourites",
+        descriptionSecondary:
+            "Built while learning JavaScript, ES6, Parcel, MVC",
+        liveLink: "https://forkify-app-js-rajat.netlify.app/",
+        githubLink:
+            "https://github.com/rajatverma311201/forkify-app-javascript",
+        mainImage: "/projects-images/forkify-app-javascript/forkify-main.png",
+        technologies: ["JavaScript", "Sass", "Parcel", "ES6"],
+        topics: [
+            "Javascript",
+            "Advanced DOM Manipulation",
+            "ES6",
+            "Parcel",
+            "MVC",
+            "APIs",
+            "Asynchronous JavaScript",
+            "Netlify Forms",
+        ],
+    },
+    {
+        slug: "mapty-app",
+        name: "Mapty",
+        description:
+            "A simple webapp to log your running and cycling on a map using the Geolocation API and Leaflet Maps",
+        descriptionSecondary:
+            "Built while learning JavaScript, ES6, Object Oriented Programming, GeoLocation API",
+        liveLink: "https://rajatverma311201.github.io/Mapty-App/",
+        githubLink: "https://github.com/rajatverma311201/Mapty-App",
+        mainImage: "/projects-images/mapty-app/mapty-main.png",
+        technologies: ["JavaScript", "ES6", "OOPs"],
+        topics: [
+            "Javascript",
+            "Advanced DOM Manipulation",
+            "ES6",
+            "Parcel",
+            "MVC",
+            "APIs",
+            "Asynchronous JavaScript",
+            "Netlify Forms",
+        ],
+    },
+    {
         slug: "natours-sass",
         name: "Natours",
         description:
@@ -50,6 +95,24 @@ export const PROJECTS_LIST = [
             "7-1 Sass Architecture",
             "Responsive Design",
             "BEM Methodology",
+        ],
+    },
+    {
+        slug: "tourist-css",
+        name: "Tourist",
+        description:
+            "A beautiful responsive home page for a travelling website",
+        descriptionSecondary: "A fun project for refreshing my css skills",
+        liveLink: "https://rajatverma311201.github.io/Tourist",
+        githubLink: "https://github.com/rajatverma311201/Tourist",
+        mainImage: "/projects-images/tourist-css/tourist-main.png",
+        technologies: ["CSS", "Javascript", "HTML"],
+        topics: [
+            "CSS Flexbox",
+            "CSS Grid",
+            "Javascript",
+            "HTML",
+            "Responsive Design",
         ],
     },
     {
@@ -106,51 +169,6 @@ export const PROJECTS_LIST = [
             "CSS Flexbox",
             "Responsive Design",
             "BEM Methodology",
-            "Netlify Forms",
-        ],
-    },
-    {
-        slug: "forkify-app-javascript",
-        name: "Forkify",
-        description:
-            "A webapp to search for recipes and save them to your favourites",
-        descriptionSecondary:
-            "Built while learning JavaScript, ES6, Parcel, MVC",
-        liveLink: "https://forkify-app-js-rajat.netlify.app/",
-        githubLink:
-            "https://github.com/rajatverma311201/forkify-app-javascript",
-        mainImage: "/projects-images/forkify-app-javascript/forkify-main.png",
-        technologies: ["JavaScript", "Sass", "Parcel", "ES6"],
-        topics: [
-            "Javascript",
-            "Advanced DOM Manipulation",
-            "ES6",
-            "Parcel",
-            "MVC",
-            "APIs",
-            "Asynchronous JavaScript",
-            "Netlify Forms",
-        ],
-    },
-    {
-        slug: "mapty-app",
-        name: "Mapty",
-        description:
-            "A simple webapp to log your running and cycling on a map using the Geolocation API and Leaflet Maps",
-        descriptionSecondary:
-            "Built while learning JavaScript, ES6, Object Oriented Programming, GeoLocation API",
-        liveLink: "https://rajatverma311201.github.io/Mapty-App/",
-        githubLink: "https://github.com/rajatverma311201/Mapty-App",
-        mainImage: "/projects-images/mapty-app/mapty-main.png",
-        technologies: ["JavaScript", "ES6", "OOPs"],
-        topics: [
-            "Javascript",
-            "Advanced DOM Manipulation",
-            "ES6",
-            "Parcel",
-            "MVC",
-            "APIs",
-            "Asynchronous JavaScript",
             "Netlify Forms",
         ],
     },
