@@ -1,5 +1,37 @@
 export const PROJECTS_LIST = [
     {
+        slug: "adventour-app",
+        name: "Adventour",
+        description:
+            "A Server Side Rendered Website for Booking Tours using Server Side Javascript",
+        descriptionSecondary:
+            "Built while learning NodeJS, Express, Mongoose, MongoDB",
+        liveLink: "https://adventour-production.up.railway.app/",
+        githubLink: "https://github.com/rajatverma311201/Adventour",
+        mainImage: "/projects-images/adventour-app/adventour-main.png",
+        technologies: ["NodeJS", "Express", "Mongoose", "MongoDB", "EJS"],
+        topics: [
+            "NodeJS",
+            "Express",
+            "Server Side Javascript",
+            "Backend Development",
+            "Event Loop",
+            "Mongoose ",
+            "MongoDB",
+            "HTTP Methods",
+            "REST APIs",
+            "Express Middlewares",
+            "Error Handling",
+            "Routes and Models",
+            "MVC Architecture",
+            "JWT Authentication & Cookies",
+            "Authorization & Web Security",
+            "Nodemailer",
+            "EJS and View Engines",
+            "Payments using Stripe",
+        ],
+    },
+    {
         slug: "natours-sass",
         name: "Natours",
         description:
