@@ -58,6 +58,7 @@
     &-tech {
         @include flex(1rem, flex-start);
         margin: 1.25rem auto;
+        flex-wrap: wrap;
 
         &__item {
             box-shadow: $shadow-2;
