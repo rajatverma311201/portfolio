@@ -41,6 +41,7 @@ const ProjectsPage = () => {
                     delay: 0.55,
                     duration: 0.5,
                 }}
+                className={styles["container"]}
             >
                 <motion.h2
                     // viewport={{ once: true }}
