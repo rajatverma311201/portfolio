@@ -2,7 +2,6 @@
 
 .modal-project {
     background: $background-color-2;
-    border: 2px solid var(--section-color);
     @include border-radius(5px);
     padding: 2rem 1rem;
     max-width: 90vw;
@@ -43,6 +42,7 @@
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
+        margin-top: 1rem;
         text-transform: uppercase;
         color: var(--section-color);
     }
@@ -70,7 +70,6 @@
         text-transform: uppercase;
         list-style: none;
         font-weight: 700;
-        margin-bottom: 1rem;
         @include flex(1rem);
         flex-wrap: wrap;
         &__item {
@@ -83,7 +82,8 @@
         }
     }
     .modal-link {
-        @include flex(1rem);
+        @include flex(2.5rem);
+        margin: 1rem auto;
         &__item {
             background: $background-color-2;
             box-shadow: $shadow-1;
@@ -94,7 +94,9 @@
             color: var(--section-color);
             font-size: 2.5rem;
             @include flex(0);
-            margin: 1rem 0;
+            &:hover {
+                box-shadow: $shadow-2;
+            }
         }
     }
 

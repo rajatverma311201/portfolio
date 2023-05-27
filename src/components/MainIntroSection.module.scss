@@ -46,7 +46,6 @@
     .intro-text {
         font-weight: 600;
         line-height: 1.25;
-        // font-family: $font-secondary;
         &-secondary {
             @media (max-width: 768px) {
                 font-size: 4.5rem;
@@ -78,9 +77,7 @@
         @include transition(transform 0.25s ease-in-out);
 
         &:hover {
-            // color: $color-primary;
             background: $background-color-2;
-            // box-shadow: ;
             @include transform(translateY(-5px) scale(1.01));
         }
     }

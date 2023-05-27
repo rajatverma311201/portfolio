@@ -495,10 +495,6 @@ export const TOOLS_LIST = [
         name: "Postman",
         icon: "postman.svg",
     },
-    // {
-    //     name: "GitHub",
-    //     icon: "github.svg",
-    // },
     {
         name: "VS Code",
         icon: "vscode.svg",

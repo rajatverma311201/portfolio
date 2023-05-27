@@ -12,12 +12,6 @@
 html {
     font-size: 62.5%;
     -webkit-tap-highlight-color: transparent;
-    /* -webkit-touch-callout: none; */
-    /* -webkit-user-select: none; */
-    /* -khtml-user-select: none; */
-    /* -moz-user-select: none; */
-    /* -ms-user-select: none; */
-    /* user-select: none; */
 }
 
 h1 {
@@ -34,7 +28,7 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7.5px;
+    width: 5px;
 }
 
 /* Track */
@@ -49,7 +43,7 @@ a {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    background: #777;
+    background: var(--primary-color);
 }
 
 /* Handle on hover */
