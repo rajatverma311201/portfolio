@@ -160,24 +160,34 @@ const ProjectDetailModal = ({
                     <h2 className={styles["modal-project-name"]}>
                         {modalProject?.name}
                     </h2>
+                    <div className={styles["modal-link"]}>
+                        <a
+                            href={modalProject?.githubLink}
+                            target="_blank"
+                            className={styles["modal-link__item"]}
+                        >
+                            <FaGithub />
+                        </a>
+                        <a
+                            href={modalProject?.liveLink}
+                            target="_blank"
+                            className={styles["modal-link__item"]}
+                        >
+                            <TbExternalLink />
+                        </a>
+                    </div>
                     <ul className={styles["modal-project-topic-list"]}>
                         {modalProject?.topics?.map((topic) => (
                             <li
                                 key={topic}
-                                className={styles["modal-project-topic-list"]}
+                                className={
+                                    styles["modal-project-topic-list__item"]
+                                }
                             >
                                 {topic}
                             </li>
                         ))}
                     </ul>
-                    <div className={styles["modal-link"]}>
-                        <a href="" className={styles["modal-link__item"]}>
-                            <FaGithub />
-                        </a>
-                        <a href="" className={styles["modal-link__item"]}>
-                            <TbExternalLink />
-                        </a>
-                    </div>
                 </motion.div>
             </Box>
         </AnimatePresence>
