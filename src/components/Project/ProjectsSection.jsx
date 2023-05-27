@@ -10,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { TbExternalLink } from "react-icons/tb";
 import { ProjectCard } from "@/components";
 import Image from "next/image";
-
+import ProjectModal from "./ProjectModal";
 function getRandomInteger(n) {
     return Math.floor(Math.random() * n);
 }
@@ -99,7 +99,7 @@ const ProjectsSection = () => {
                 </motion.div>
             </section>
 
-            <ProjectDetailModal
+            <ProjectModal
                 sectionColor={sectionColor}
                 modalProject={modalProject}
                 open={open}
@@ -110,18 +110,6 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-
-const styleModalBox = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    // maxWidth: "90vw",
-    // maxHeight: "90vh",
-    // overflow: "auto",
-    // boxShadow: 24,
-    outline: "none",
-};
 
 const defaultOptions = {
     reverse: true, // reverse the tilt direction
@@ -134,62 +122,3 @@ const defaultOptions = {
     reset: true, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
-
-const ProjectDetailModal = ({
-    open,
-    handleClose,
-    modalProject,
-    sectionColor,
-}) => (
-    <Modal
-        sx={{ backdropFilter: "blur(7.5px)" }}
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-    >
-        <AnimatePresence>
-            <Box sx={styleModalBox}>
-                <motion.div
-                    style={{ "--section-color": sectionColor }}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0 }}
-                    className={styles["modal-project"]}
-                >
-                    <h2 className={styles["modal-project-name"]}>
-                        {modalProject?.name}
-                    </h2>
-                    <div className={styles["modal-link"]}>
-                        <a
-                            href={modalProject?.githubLink}
-                            target="_blank"
-                            className={styles["modal-link__item"]}
-                        >
-                            <FaGithub />
-                        </a>
-                        <a
-                            href={modalProject?.liveLink}
-                            target="_blank"
-                            className={styles["modal-link__item"]}
-                        >
-                            <TbExternalLink />
-                        </a>
-                    </div>
-                    <ul className={styles["modal-project-topic-list"]}>
-                        {modalProject?.topics?.map((topic) => (
-                            <li
-                                key={topic}
-                                className={
-                                    styles["modal-project-topic-list__item"]
-                                }
-                            >
-                                {topic}
-                            </li>
-                        ))}
-                    </ul>
-                </motion.div>
-            </Box>
-        </AnimatePresence>
-    </Modal>
-);

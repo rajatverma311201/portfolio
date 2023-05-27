@@ -1,51 +1,5 @@
 @import "@/sass/main";
 
-.container {
-    margin: 10rem 1rem;
-    border-bottom: 1px solid $color-primary;
-    padding-bottom: 10rem;
-
-    .main-logo-img-container {
-        margin-bottom: 5rem;
-        @include flex(0);
-        .main-logo-img {
-            max-width: 40rem;
-            height: auto;
-            box-shadow: $shadow-2;
-            padding: 0.5rem;
-            background: $background-color-1;
-            @include border-radius(10px);
-
-            @media (max-width: 480px) {
-                max-width: 30rem;
-                box-shadow: none;
-                background: none;
-            }
-        }
-    }
-
-    .main-heading {
-        margin-top: 2.5rem;
-        text-align: center;
-        font-size: 3rem;
-        color: $color-lighter;
-    }
-
-    .heading-highlight {
-        font-family: $font-secondary;
-        text-shadow: 0 0 2.5px rgba($color-primary, 0.5);
-
-        color: $color-primary;
-        font-size: 5rem;
-        margin-right: 2rem;
-    }
-}
-
-.projects-list {
-    margin-top: 10rem;
-    @include flex(5rem, center, stretch);
-    flex-wrap: wrap;
-}
 .modal-project {
     background: $background-color-2;
     border: 2px solid var(--section-color);
@@ -115,7 +69,7 @@
         font-size: 1.1rem;
         text-transform: uppercase;
         list-style: none;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 1rem;
         @include flex(1rem);
         flex-wrap: wrap;
