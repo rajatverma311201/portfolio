@@ -1,4 +1,21 @@
 @import "@/sass/main";
+
+.projects-main-heading {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: $color-lighter;
+}
+
+.heading-highlight {
+    font-family: $font-secondary;
+    text-shadow: 0 0 2.5px rgba($color-primary, 0.5);
+
+    color: $color-primary;
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+
 .projects-list {
     margin-top: 10rem;
     @include flex(5rem, center, stretch);

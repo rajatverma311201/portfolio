@@ -42,7 +42,21 @@ const ProjectsPage = () => {
                     duration: 0.5,
                 }}
             >
-                <h1>Projects</h1>
+                <motion.h2
+                    // viewport={{ once: true }}
+                    // initial={{ opacity: 0 }}
+                    // whileInView={{ opacity: 1 }}
+                    // transition={{
+                    //     delay: 0.75,
+                    //     duration: 0.5,
+                    // }}
+                    className={styles["projects-main-heading"]}
+                >
+                    My{" "}
+                    <span className={styles["heading-highlight"]}>
+                        Projects
+                    </span>
+                </motion.h2>
                 <section className={styles["projects-list"]}>
                     {PROJECTS_LIST.map((project) => (
                         <ProjectCard
