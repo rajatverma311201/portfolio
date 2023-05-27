@@ -1,3 +1,11 @@
+export const COLOR_THEMES_LIST = [
+    "#10bfff",
+    "#ff204f",
+    "#fcae1e",
+    "#03c04a",
+    "#8b5cf6",
+];
+
 export const PROJECTS_LIST = [
     {
         slug: "adventour-app",

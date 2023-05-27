@@ -9,14 +9,8 @@ import { Drawer } from "@mui/material";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { usePathname, useRouter } from "next/navigation";
+import { COLOR_THEMES_LIST } from "@/assets/data";
 
-const COLOR_THEMES_LIST = [
-    "#10bfff",
-    "#ff204f",
-    "#fcae1e",
-    "#03c04a",
-    "#8b5cf6",
-];
 let finalColor = COLOR_THEMES_LIST[2];
 const Header = () => {
     const router = useRouter();
