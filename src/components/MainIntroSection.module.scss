@@ -114,8 +114,10 @@
     @media (max-width: 48em) {
         &__container {
             margin-left: auto;
-            font-size: 4rem;
             @include flex(2.5rem, center, center);
+        }
+        &__item {
+            font-size: 3.5rem;
         }
     }
 }
