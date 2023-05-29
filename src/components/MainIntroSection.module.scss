@@ -104,7 +104,7 @@
         cursor: pointer;
         padding: 0.75rem;
         @include border-radius(5px);
-        @include transition(color 0.25s ease-in-out);
+        // @include transition(all 0.5s ease-in-out);
         @include flex(0, center, center);
 
         &:hover {
