@@ -4,7 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "@/assets/desktop-animation.json";
-
+import { SOCIALS_LIST } from "@/assets/data";
 const MainIntroSection = () => {
     return (
         <div className={styles["main-outer-container"]}>
@@ -31,8 +31,22 @@ const MainIntroSection = () => {
                     </motion.div>
                 </h1>
                 <h4 className={styles["intro-text-secondary"]}>
-                    a &nbsp;passionate &nbsp;Developer.
+                    {" "}
+                    a &nbsp;full stack &nbsp;Developer.
                 </h4>
+                <div className={styles["social-icons__container"]}>
+                    {SOCIALS_LIST.map((social) => (
+                        <a
+                            className={styles["social-icons__item"]}
+                            href={social.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            key={social.name}
+                        >
+                            {social.icon}
+                        </a>
+                    ))}
+                </div>
                 <a href="/Resume_Rajat_Verma.pdf" target="_blank">
                     <button className={styles["resume-btn"]}>
                         <span className={styles["btn-text"]}>Resume</span>

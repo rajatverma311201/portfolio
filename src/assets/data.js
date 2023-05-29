@@ -1,9 +1,29 @@
+import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+
 export const COLOR_THEMES_LIST = [
     "#10bfff",
     "#ff204f",
     "#fcae1e",
     "#03c04a",
     "#8b5cf6",
+];
+
+export const SOCIALS_LIST = [
+    {
+        name: "Github",
+        link: "https://github.com/rajatverma311201",
+        icon: <FaGithub />,
+    },
+    {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/rajatverma311201/",
+        icon: <FaLinkedin />,
+    },
+    {
+        name: "Instagram",
+        link: "https://www.instagram.com/rajat_verma3112/",
+        icon: <FaInstagramSquare />,
+    },
 ];
 
 export const PROJECTS_LIST = [

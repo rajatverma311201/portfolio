@@ -85,3 +85,37 @@
         margin-inline: 2.5rem;
     }
 }
+
+.social-icons {
+    &__container {
+        @include flex(2rem, flex-start, center);
+        // gap: 2rem;
+        margin: 2.5rem auto 5rem auto;
+        margin-left: 5rem;
+    }
+    &__item {
+        font-size: 3rem;
+        color: $color-primary;
+        // color: #000;
+        background-color: $background-color-1;
+        // background-color: $color-primary;
+        box-shadow: $shadow-1;
+        // box-shadow: -5px 5px 50px -12.5px $color-primary;
+        cursor: pointer;
+        padding: 0.75rem;
+        @include border-radius(5px);
+        @include transition(color 0.25s ease-in-out);
+        @include flex(0, center, center);
+
+        &:hover {
+            box-shadow: $shadow-2;
+        }
+    }
+    @media (max-width: 48em) {
+        &__container {
+            margin-left: auto;
+            font-size: 4rem;
+            @include flex(2.5rem, center, center);
+        }
+    }
+}
