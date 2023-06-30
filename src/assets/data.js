@@ -218,7 +218,7 @@ export const EXPERIENCE_LIST = [
         type: "Full Time",
         startMonth: "Jan",
         startYear: "2023",
-        endMonth: "May",
+        endMonth: "June",
         endYear: "2023",
         duration: "6 months",
         technologies: [
