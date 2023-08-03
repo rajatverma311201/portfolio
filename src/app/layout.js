@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
                 <footer id="footer">
                     <h2>
-                        Built in{" "}
+                        Built with{" "}
                         <span>
                             <FaReact />
                         </span>{" "}

@@ -77,7 +77,7 @@ const Languages = () => (
         <h3 className={styles["skills-heading"]}></h3>
         <div className={styles["skills-list"]}>
             {LANGUAGES_LIST.map((skill) => (
-                <div className={styles["skill"]} key={skill.name}>
+                <div className={`${styles["skill"]} tooltip`} key={skill.name}>
                     <Image
                         loading="lazy"
                         width={100}
@@ -90,6 +90,7 @@ const Languages = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
+                    <span class="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -109,7 +110,7 @@ const WebSkills = () => (
         <h3 className={styles["skills-heading"]}>WEB</h3>
         <div className={styles["skills-list"]}>
             {WEB_SKILLS_LIST.map((skill) => (
-                <div className={styles["skill"]} key={skill.name}>
+                <div className={`${styles["skill"]} tooltip`} key={skill.name}>
                     <Image
                         loading="lazy"
                         width={100}
@@ -132,6 +133,7 @@ const WebSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
+                    <span class="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -152,7 +154,7 @@ const MobileSkills = () => (
         <h3 className={styles["skills-heading"]}>MOBILE</h3>
         <div className={styles["skills-list"]}>
             {MOBILE_SKILLS_LIST.map((skill) => (
-                <div className={styles["skill"]} key={skill.name}>
+                <div className={`${styles["skill"]} tooltip`} key={skill.name}>
                     <Image
                         loading="lazy"
                         width={100}
@@ -165,6 +167,7 @@ const MobileSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
+                    <span class="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -185,7 +188,7 @@ const DBSkills = () => (
         <h3 className={styles["skills-heading"]}>Databases</h3>
         <div className={styles["skills-list"]}>
             {DATABASE_SKILLS_LIST.map((skill) => (
-                <div className={styles["skill"]} key={skill.name}>
+                <div className={`${styles["skill"]} tooltip`} key={skill.name}>
                     <Image
                         loading="lazy"
                         width={100}
@@ -202,6 +205,7 @@ const DBSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
+                    <span class="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -222,7 +226,7 @@ const Tools = () => (
         <h3 className={styles["skills-heading"]}></h3>
         <div className={styles["skills-list"]}>
             {TOOLS_LIST.map((skill) => (
-                <div className={styles["skill"]} key={skill.name}>
+                <div className={`${styles["skill"]} tooltip`} key={skill.name}>
                     <Image
                         loading="lazy"
                         width={100}
@@ -235,6 +239,7 @@ const Tools = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
+                    <span class="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>

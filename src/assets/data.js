@@ -420,6 +420,7 @@ export const LANGUAGES_LIST = [
         icon: "cpp.svg",
     },
 ];
+
 export const MOBILE_SKILLS_LIST = [
     {
         name: "React Native",
@@ -431,6 +432,7 @@ export const MOBILE_SKILLS_LIST = [
         icon: "flutter.svg",
     },
 ];
+
 export const WEB_SKILLS_LIST = [
     {
         name: "React",
@@ -466,16 +468,16 @@ export const WEB_SKILLS_LIST = [
         icon: "css.svg",
     },
     {
+        name: "Tailwind CSS",
+        icon: "tailwindcss.svg",
+    },
+    {
         name: "Django",
         icon: "django.svg",
     },
     {
         name: "Flask",
         icon: "flask.svg",
-    },
-    {
-        name: "Tailwind CSS",
-        icon: "tailwindcss.svg",
     },
     {
         name: "HTML",
@@ -502,6 +504,10 @@ export const TOOLS_LIST = [
     {
         name: "Git",
         icon: "git.svg",
+    },
+    {
+        name: "Supabase",
+        icon: "supabase.svg",
     },
     {
         name: "Firebase",
