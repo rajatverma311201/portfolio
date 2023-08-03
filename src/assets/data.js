@@ -4,8 +4,8 @@ export const COLOR_THEMES_LIST = [
     "#10bfff",
     "#ff204f",
     "#fcae1e",
-    "#03c04a",
-    "#8b5cf6",
+    "#a3e635",
+    "#34d399",
 ];
 
 export const SOCIALS_LIST = [
@@ -412,7 +412,7 @@ export const LANGUAGES_LIST = [
         icon: "python.svg",
     },
     {
-        name: "dart",
+        name: "Dart",
         icon: "dart.svg",
     },
     {
