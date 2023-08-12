@@ -75,7 +75,7 @@ a {
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid var(--primary-color);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
