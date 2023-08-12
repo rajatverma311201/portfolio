@@ -28,12 +28,48 @@ export const SOCIALS_LIST = [
 
 export const PROJECTS_LIST = [
     {
+        slug: "the-wild-oasis-react",
+        name: "The Wild Oasis",
+        description: "A React app for managing a fictional resort. Admin Panel",
+        descriptionSecondary:
+            "Admin panel includes charts and statistics for bookings, revenue, etc.",
+        liveLink: "https://the-wild-oasis-react.vercel.app/",
+        githubLink: "https://github.com/rajatverma311201/the-wild-oasis-react",
+        mainImage:
+            "/projects-images/the-wild-oasis-react/the-wild-oasis-react-main.png",
+        technologies: [
+            "React",
+            "Supabase",
+            "React Query",
+            "Styled Components",
+            "React Hook Form",
+            "Recharts",
+        ],
+        topics: [
+            "React",
+            "React Query",
+            "Styled Components",
+            "React Hook Form",
+            "Supabase",
+            "Authentication - Supabase",
+            "Authorization - Supabase",
+            "Supabase Storage",
+            "React Design Patterns",
+            "Compound Component Pattern",
+            "Highly Reusable Components",
+            "React Custom Hooks",
+            "React Router",
+            "Recharts",
+            "React Hot Toast",
+        ],
+    },
+    {
         slug: "adventour-app",
         name: "Adventour",
         description:
             "A Server Side Rendered Website for Booking Adventure Tours",
         descriptionSecondary:
-            "Built while learning NodeJS, Express, Mongoose, MongoDB",
+            "User can book tours, give reviews,login, signup, reset password, update profile. Admin can manage tours, users, bookings and reviews",
         liveLink: "https://adventour-production.up.railway.app/",
         githubLink: "https://github.com/rajatverma311201/Adventour",
         mainImage: "/projects-images/adventour-app/adventour-main.png",

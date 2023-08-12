@@ -46,6 +46,9 @@ const ProjectModal = ({ open, handleClose, modalProject, sectionColor }) => (
                         <p className={styles["modal-project-description"]}>
                             {modalProject?.description}
                         </p>
+                        <p className={styles["modal-project-description"]}>
+                            {modalProject?.descriptionSecondary}
+                        </p>
                         {/* <p className={styles["modal-project-description"]}>
                             {modalProject?.descriptionSecondary}
                         </p> */}
@@ -65,7 +68,7 @@ const ProjectModal = ({ open, handleClose, modalProject, sectionColor }) => (
                             ))}
                         </ul>
                         <h3 className={styles["modal-project-topic-heading"]}>
-                            Learnings
+                            Topics
                         </h3>
 
                         <ul className={styles["modal-project-topic-list"]}>
