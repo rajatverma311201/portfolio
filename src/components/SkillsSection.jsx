@@ -90,7 +90,7 @@ const Languages = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
-                    <span class="tooltiptext">{skill.name}</span>
+                    <span className="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -133,7 +133,7 @@ const WebSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
-                    <span class="tooltiptext">{skill.name}</span>
+                    <span className="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -167,7 +167,7 @@ const MobileSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
-                    <span class="tooltiptext">{skill.name}</span>
+                    <span className="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -205,7 +205,7 @@ const DBSkills = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
-                    <span class="tooltiptext">{skill.name}</span>
+                    <span className="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>
@@ -239,7 +239,7 @@ const Tools = () => (
                         src={`/skill-icons/${skill.icon}`}
                         alt={skill.name}
                     />
-                    <span class="tooltiptext">{skill.name}</span>
+                    <span className="tooltiptext">{skill.name}</span>
                 </div>
             ))}
         </div>

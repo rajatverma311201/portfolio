@@ -120,7 +120,7 @@ const SideNavbar = ({ open, handleClose }) => {
                                 onClick={handleClose}
                                 className={
                                     pathname === link.href
-                                        ? styles["active-link"]
+                                        ? styles["active-link-sidebar"]
                                         : ""
                                 }
                                 href={link.href}
