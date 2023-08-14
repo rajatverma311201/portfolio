@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./ContactPage.module.scss";
 import { toast } from "react-hot-toast";
-function page() {
+function ContactPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e) => {
@@ -87,4 +87,4 @@ function page() {
     );
 }
 
-export default page;
+export default ContactPage;
