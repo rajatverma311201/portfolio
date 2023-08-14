@@ -12,6 +12,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { COLOR_THEMES_LIST } from "@/assets/data";
 
 let finalColor = COLOR_THEMES_LIST[2];
+
+const LINKS_LIST = [
+    { label: "Home", href: "/" },
+    { label: "Projects", href: "/projects" },
+    { label: "Contact Me", href: "/contact-me" },
+];
+
 const Header = () => {
     const router = useRouter();
     const [open, setOpen] = useState(false);
@@ -68,28 +75,20 @@ const NavigationBar = () => {
     return (
         <nav className={styles["main-nav"]}>
             <ul>
-                <li>
-                    <Link
-                        className={
-                            pathname === "/" ? styles["active-link"] : ""
-                        }
-                        href="/"
-                    >
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        className={
-                            pathname === "/projects"
-                                ? styles["active-link"]
-                                : ""
-                        }
-                        href="/projects"
-                    >
-                        Projects
-                    </Link>
-                </li>
+                {LINKS_LIST.map((link) => (
+                    <li key={link.href}>
+                        <Link
+                            className={
+                                pathname === link.href
+                                    ? styles["active-link"]
+                                    : ""
+                            }
+                            href={link.href}
+                        >
+                            {link.label}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
@@ -115,32 +114,21 @@ const SideNavbar = ({ open, handleClose }) => {
                     </span>
                 </div>
                 <ul>
-                    <li>
-                        <Link
-                            onClick={handleClose}
-                            className={
-                                pathname === "/"
-                                    ? styles["active-link-sidebar"]
-                                    : ""
-                            }
-                            href="/"
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={handleClose}
-                            className={
-                                pathname === "/projects"
-                                    ? styles["active-link-sidebar"]
-                                    : ""
-                            }
-                            href="/projects"
-                        >
-                            Projects
-                        </Link>
-                    </li>
+                    {LINKS_LIST.map((link) => (
+                        <li key={link.href}>
+                            <Link
+                                onClick={handleClose}
+                                className={
+                                    pathname === link.href
+                                        ? styles["active-link"]
+                                        : ""
+                                }
+                                href={link.href}
+                            >
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </Drawer>

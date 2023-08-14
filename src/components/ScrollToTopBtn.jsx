@@ -10,11 +10,10 @@ import {
 import { useState } from "react";
 
 const ScrollToTopBtn = () => {
-    const { scrollYProgress, scrollY } = useScroll();
+    const { scrollY } = useScroll();
     const [showButton, setShowButton] = useState(false);
 
     useMotionValueEvent(scrollY, "change", (y) => {
-        console.log(y);
         if (y > 500) {
             setShowButton(true);
         } else {

@@ -7,6 +7,7 @@ import { Header, ScrollToTopBtn, ProgressBar } from "@/components";
 
 import "./globals.css";
 import Script from "next/script";
+import ToastComponent from "@/components/ToastComponent";
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             <HeadTag />
             <body id="body">
                 <ProgressBar />
+                <ToastComponent />
                 <Header />
                 <main id="main">{children}</main>
 
