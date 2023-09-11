@@ -50,26 +50,13 @@ function ContactPage() {
                 autoComplete="off"
             >
                 <div className={styles["form-row"]}>
-                    <label htmlFor="name">Name</label>
-                    <input
-                        autoComplete={"off"}
-                        type="text"
-                        name="name"
-                        id="name"
-                    />
+                    <NameInput />
                 </div>
                 <div className={styles["form-row"]}>
-                    <label htmlFor="email">Email</label>
-                    <input
-                        autoComplete={"off"}
-                        type="email"
-                        name="email"
-                        id="email"
-                    />
+                    <EmailInput />
                 </div>
                 <div className={styles["form-row"]}>
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" />
+                    <MessageInput />
                 </div>
                 <div className={styles["form-row"]}>
                     <div>
@@ -88,3 +75,24 @@ function ContactPage() {
 }
 
 export default ContactPage;
+
+const NameInput = () => (
+    <>
+        <label htmlFor="name">Name</label>
+        <input autoComplete={"off"} type="text" name="name" id="name" />
+    </>
+);
+
+const EmailInput = () => (
+    <>
+        <label htmlFor="email">Email</label>
+        <input autoComplete={"off"} type="email" name="email" id="email" />
+    </>
+);
+
+const MessageInput = () => (
+    <>
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" autoComplete={"off"} />
+    </>
+);

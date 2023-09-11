@@ -47,10 +47,13 @@ const MainIntroSection = () => {
                         </a>
                     ))}
                 </div>
-                <a href="/Resume_Rajat_Verma.pdf" target="_blank">
+                <a
+                    href="https://drive.google.com/file/d/1kWFwNBnwzYKiRfF7evLLWg8hOml7w6og/view?usp=drive_link"
+                    target="_blank"
+                >
                     <button className={styles["resume-btn"]}>
-                        <span className={styles["btn-text"]}>Resume</span>
-                        <FiDownload className={styles["btn-icon"]} />
+                        <span className={styles["btn-text"]}>My Resume</span>
+                        {/* <FiDownload className={styles["btn-icon"]} /> */}
                     </button>
                 </a>
             </motion.section>
