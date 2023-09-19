@@ -72,8 +72,10 @@ a {
     top: -50%;
     z-index: 1;
     font-size: 1.2rem;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    background: linear-gradient(145deg, #1e2024, #23272b);
+
+    /* backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px); */
     border: 1px solid var(--primary-color);
     font-weight: 500;
 }

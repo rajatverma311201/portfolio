@@ -527,12 +527,16 @@ export const DATABASE_SKILLS_LIST = [
         icon: "mongodb.svg",
     },
     {
-        name: "MySQL",
-        icon: "mysql.svg",
+        name: "Redis",
+        icon: "redis.svg",
     },
     {
         name: "PostgreSQL",
         icon: "postgresql.svg",
+    },
+    {
+        name: "MySQL",
+        icon: "mysql.svg",
     },
 ];
 

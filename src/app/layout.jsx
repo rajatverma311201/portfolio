@@ -1,26 +1,15 @@
 "use client";
 
 import { FaReact, FaSass } from "react-icons/fa";
-import { useEffect, useState } from "react";
 import "@/sass/main.scss";
 import { Header, ScrollToTopBtn, ProgressBar } from "@/components";
 
 import "./globals.css";
 import Script from "next/script";
 import ToastComponent from "@/components/ToastComponent";
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
+import Cursor from "@/components/Cursor";
 
 export default function RootLayout({ children }) {
-    useEffect(() => {
-        const root = document.documentElement;
-    }, []);
     return (
         <html lang="en" id="html">
             <HeadTag />

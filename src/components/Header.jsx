@@ -194,7 +194,7 @@ const ColorThemeSelector = () => {
                 root.style.setProperty(
                     "--primary-color",
 
-                    latest.startsWith("#") ? latest : colorToHex(latest)
+                    latest.startsWith("#") ? latest : colorToHex(latest),
                 );
             },
         });
