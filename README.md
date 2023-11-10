@@ -1,6 +1,6 @@
 # RAJAT VERMA
 
-## [Portfolio Link](https://rajat-verma.netlify.app/)
+## [Portfolio Link](https://rajat-verma.vercel.app/)
 
 ## Built using NextJS, React ans Sass
 
