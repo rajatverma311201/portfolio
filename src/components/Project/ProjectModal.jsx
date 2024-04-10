@@ -28,13 +28,15 @@ const ProjectModal = ({ open, handleClose, modalProject, sectionColor }) => (
                     </h2>
                     <div className={styles["modal-project-content"]}>
                         <div className={styles["modal-link"]}>
-                            <a
-                                href={modalProject?.githubLink}
-                                target="_blank"
-                                className={styles["modal-link__item"]}
-                            >
-                                <FaGithub />
-                            </a>
+                            {modalProject?.githubLink && (
+                                <a
+                                    href={modalProject?.githubLink}
+                                    target="_blank"
+                                    className={styles["modal-link__item"]}
+                                >
+                                    <FaGithub />
+                                </a>
+                            )}
                             <a
                                 href={modalProject?.liveLink}
                                 target="_blank"
@@ -67,9 +69,15 @@ const ProjectModal = ({ open, handleClose, modalProject, sectionColor }) => (
                                 </li>
                             ))}
                         </ul>
-                        <h3 className={styles["modal-project-topic-heading"]}>
-                            Topics
-                        </h3>
+                        {modalProject?.topics?.length && (
+                            <h3
+                                className={
+                                    styles["modal-project-topic-heading"]
+                                }
+                            >
+                                Topics
+                            </h3>
+                        )}
 
                         <ul className={styles["modal-project-topic-list"]}>
                             {modalProject?.topics?.map((topic) => (

@@ -122,7 +122,9 @@ const WebSkills = () => (
                                 ? styles["skill__logo--mod"]
                                 : null
                         } ${
-                            ["Express", "Flask", "NextJS"].includes(skill.name)
+                            ["Express", "Flask", "NextJS", "Prisma"].includes(
+                                skill.name
+                            )
                                 ? styles["skill__logo--mod2"]
                                 : ""
                         } ${
