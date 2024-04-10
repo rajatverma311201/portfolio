@@ -95,3 +95,10 @@ a {
     border-style: solid;
     border-color: var(--primary-color) transparent transparent transparent;
 }
+
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}

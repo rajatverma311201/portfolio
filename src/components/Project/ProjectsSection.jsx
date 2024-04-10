@@ -11,6 +11,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { ProjectCard } from "@/components";
 import Image from "next/image";
 import ProjectModal from "./ProjectModal";
+import Link from "next/link";
 function getRandomInteger(n) {
     return Math.floor(Math.random() * n);
 }
@@ -97,6 +98,16 @@ const ProjectsSection = () => {
                         />
                     ))}
                 </motion.div>
+                <div className="make-center">
+                    <Link href="/projects">
+                        <button className={styles["resume-btn"]}>
+                            <span className={styles["btn-text"]}>
+                                More Projects
+                            </span>
+                            {/* <FiDownload className={styles["btn-icon"]} /> */}
+                        </button>
+                    </Link>
+                </div>
             </section>
 
             <ProjectModal
