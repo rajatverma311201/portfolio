@@ -30,15 +30,19 @@ export const COLOR_THEMES_LIST = [
 
 export const PROJECTS_LIST = [
     {
-        slug: "the-wild-oasis-react",
+        slug: "the-wild-oasis",
         name: "The Wild Oasis",
-        description: "A React app for managing a fictional resort. Admin Panel",
+        description:
+            "A React app for managing a fictional resort. It is a admin dashboard for the use of hotel staff for managing bookings, check-ins, check-outs, etc. The Dashboard is available in both light and dark mode.\nStatistics for 7, 30 and 90 days using Pie chart and Area chart for duration and sales is available for the staff. Cabins and Bookings page includes filters with booking status, discounts etc. with sorting items and pagination.\n",
         descriptionSecondary:
             "Admin panel includes charts and statistics for bookings, revenue, etc.",
         liveLink: "https://the-wild-oasis-react.vercel.app/",
         githubLink: "https://github.com/rajatverma311201/the-wild-oasis-react",
-        mainImage:
-            "/projects-images/the-wild-oasis-react/the-wild-oasis-react-main.png",
+
+        mainImage: "main.png",
+
+        imagesCount: 8,
+
         technologies: [
             "React",
             "Supabase",

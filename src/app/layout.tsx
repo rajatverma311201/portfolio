@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { cn } from "@/lib/utils";
 
 const robotoRoboto_Mono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -16,8 +17,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={robotoRoboto_Mono.className}>
+        <html lang="en" className="dark">
+            <body className={cn(robotoRoboto_Mono.className, "p-10")}>
                 <Toaster
                     richColors={true}
                     position="top-center"
