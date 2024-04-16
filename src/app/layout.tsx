@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { fontPrimary, fontSecondary } from "@/constants/fonts";
 import { cn } from "@/lib/utils";
-
-const robotoRoboto_Mono = Roboto_Mono({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import "./globals.css";
+import { NavigationBar } from "@/components/navigation/navigation-bar";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -17,8 +16,18 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="dark">
-            <body className={cn(robotoRoboto_Mono.className, "p-10")}>
+        <html lang="en" className="dark" suppressHydrationWarning>
+            <body className={cn(fontPrimary.className, "relative p-20")}>
+                <h1
+                    className={cn(
+                        fontSecondary.className,
+                        "absolute left-5 top-5 text-4xl font-bold text-primary",
+                    )}
+                >
+                    {"<"} Rajat Verma {"/>"}
+                </h1>
+
+                <NavigationBar />
                 <Toaster
                     richColors={true}
                     position="top-center"

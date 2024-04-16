@@ -39,8 +39,6 @@ export const PROJECTS_LIST = [
         liveLink: "https://the-wild-oasis-react.vercel.app/",
         githubLink: "https://github.com/rajatverma311201/the-wild-oasis-react",
 
-        mainImage: "main.png",
-
         imagesCount: 8,
 
         technologies: [
@@ -67,6 +65,56 @@ export const PROJECTS_LIST = [
             "React Router",
             "Recharts",
             "React Hot Toast",
+        ],
+    },
+
+    {
+        slug: "g1-aqua",
+        name: "G1 Aqua",
+        description: "Website for a water purifier company",
+        descriptionSecondary:
+            "Users can see products, services, contact details and send enquiry",
+        liveLink: "https://g1aqua.com/",
+        imagesCount: 5,
+        technologies: [
+            "NextJS",
+            "Tailwind CSS",
+            "Shadcn UI",
+            "Firebase",
+            "Nodemailer",
+        ],
+        // mainImage: "/images/projects/g1-aqua/g1aqua-main.png",
+    },
+    {
+        slug: "adventour-app",
+        name: "Adventour",
+        description:
+            "A Server Side Rendered Website for Booking Adventure Tours",
+        descriptionSecondary:
+            "User can book tours, give reviews,login, signup, reset password, update profile. Admin can manage tours, users, bookings and reviews",
+        liveLink: "https://adventour-production.up.railway.app/",
+        githubLink: "https://github.com/rajatverma311201/Adventour",
+        mainImage: "/projects-images/adventour-app/adventour-main.png",
+        technologies: ["NodeJS", "Express", "Mongoose", "MongoDB", "EJS"],
+        topics: [
+            "NodeJS",
+            "Express",
+            "Server Side Javascript",
+            "Backend Development",
+            "Event Loop",
+            "Mongoose ",
+            "MongoDB",
+            "HTTP Methods",
+            "REST APIs",
+            "Express Middlewares",
+            "Error Handling",
+            "Routes and Models",
+            "MVC Architecture",
+            "JWT Authentication & Cookies",
+            "Authorization & Web Security",
+            "Nodemailer",
+            "EJS and View Engines",
+            "Payments using Stripe",
         ],
     },
 
@@ -164,54 +212,6 @@ export const PROJECTS_LIST = [
             "Recover deleted files 🔄📄",
         ],
     },
-    {
-        slug: "g1aqua",
-        name: "G1 Aqua",
-        description: "Website for a water purifier company",
-        descriptionSecondary:
-            "Users can see products, services, contact details, send and enquiry",
-        liveLink: "https://g1aqua.com/",
-        technologies: [
-            "NextJS",
-            "Tailwind CSS",
-            "Shadcn UI",
-            "Firebase",
-            "Nodemailer",
-        ],
-        mainImage: "/projects-images/g1aqua/g1aqua-main.png",
-    },
-    {
-        slug: "adventour-app",
-        name: "Adventour",
-        description:
-            "A Server Side Rendered Website for Booking Adventure Tours",
-        descriptionSecondary:
-            "User can book tours, give reviews,login, signup, reset password, update profile. Admin can manage tours, users, bookings and reviews",
-        liveLink: "https://adventour-production.up.railway.app/",
-        githubLink: "https://github.com/rajatverma311201/Adventour",
-        mainImage: "/projects-images/adventour-app/adventour-main.png",
-        technologies: ["NodeJS", "Express", "Mongoose", "MongoDB", "EJS"],
-        topics: [
-            "NodeJS",
-            "Express",
-            "Server Side Javascript",
-            "Backend Development",
-            "Event Loop",
-            "Mongoose ",
-            "MongoDB",
-            "HTTP Methods",
-            "REST APIs",
-            "Express Middlewares",
-            "Error Handling",
-            "Routes and Models",
-            "MVC Architecture",
-            "JWT Authentication & Cookies",
-            "Authorization & Web Security",
-            "Nodemailer",
-            "EJS and View Engines",
-            "Payments using Stripe",
-        ],
-    },
 
     {
         slug: "forkify-app-javascript",
@@ -283,15 +283,15 @@ export const PROJECTS_LIST = [
     },
 
     {
-        slug: "omnifood-html-css",
+        slug: "omnifood",
         name: "Omnifood",
         description:
             "A beautiful home page for a food delivery website using HTML and CSS",
         descriptionSecondary:
             "Built while learning HTML, CSS, Responsive Design",
-        liveLink: "https://omnifood-html-css-rv.netlify.app/",
+        liveLink: "https://omnifood.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/omnifood-html-css",
-        mainImage: "/projects-images/omnifood-html-css/omnifood-main.png",
+        imagesCount: 6,
         technologies: ["CSS", "CSS Grid", "CSS Flexbox", "HTML"],
         topics: [
             "CSS",

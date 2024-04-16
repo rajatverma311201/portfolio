@@ -14,14 +14,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { fontSecondary } from "@/constants/fonts";
 
-import { Kaushan_Script, Satisfy } from "next/font/google";
-
-const satisfyFont = Satisfy({ weight: ["400"], subsets: ["latin"] });
-const kaushanFont = Kaushan_Script({
-    weight: ["400"],
-    subsets: ["latin"],
-});
 interface ProjectDetailsPageProps {
     params: {
         slug: string;
@@ -53,7 +47,7 @@ const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = ({ params }) => {
                 <div className="flex-1">
                     <h1
                         className={cn(
-                            satisfyFont.className,
+                            fontSecondary.className,
                             "text-center text-7xl font-bold text-primary",
                         )}
                     >
@@ -101,6 +95,7 @@ const ProjectImagesCarousel: React.FC<{
             <Carousel
                 className="sm:w-96 md:w-[400px] lg:w-[500px] "
                 setApi={setApi}
+                // plugins={}
             >
                 <CarouselContent>
                     {images.map((img, index) => (
