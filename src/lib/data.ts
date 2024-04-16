@@ -30,13 +30,13 @@ export const COLOR_THEMES_LIST = [
 
 export const PROJECTS_LIST = [
     {
-        slug: "the-wild-oasis",
+        slug: "wild-oasis",
         name: "The Wild Oasis",
         description:
             "A React app for managing a fictional resort. It is a admin dashboard for the use of hotel staff for managing bookings, check-ins, check-outs, etc. The Dashboard is available in both light and dark mode.\nStatistics for 7, 30 and 90 days using Pie chart and Area chart for duration and sales is available for the staff. Cabins and Bookings page includes filters with booking status, discounts etc. with sorting items and pagination.\n",
         descriptionSecondary:
             "Admin panel includes charts and statistics for bookings, revenue, etc.",
-        liveLink: "https://the-wild-oasis-react.vercel.app/",
+        liveLink: "https://wild-oasis.rajat-verma.in",
         githubLink: "https://github.com/rajatverma311201/the-wild-oasis-react",
 
         imagesCount: 8,
@@ -86,15 +86,15 @@ export const PROJECTS_LIST = [
         // mainImage: "/images/projects/g1-aqua/g1aqua-main.png",
     },
     {
-        slug: "adventour-app",
+        slug: "adventour",
         name: "Adventour",
         description:
             "A Server Side Rendered Website for Booking Adventure Tours",
         descriptionSecondary:
             "User can book tours, give reviews,login, signup, reset password, update profile. Admin can manage tours, users, bookings and reviews",
-        liveLink: "https://adventour-production.up.railway.app/",
+        liveLink: "https://server-adventour.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/Adventour",
-        mainImage: "/projects-images/adventour-app/adventour-main.png",
+        imagesCount: 8,
         technologies: ["NodeJS", "Express", "Mongoose", "MongoDB", "EJS"],
         topics: [
             "NodeJS",
@@ -214,16 +214,16 @@ export const PROJECTS_LIST = [
     },
 
     {
-        slug: "forkify-app-javascript",
+        slug: "forkify",
         name: "Forkify",
         description:
             "A webapp to search for recipes and save them to your favourites",
         descriptionSecondary:
             "Built while learning JavaScript, ES6, Parcel, MVC",
-        liveLink: "https://forkify-app-js-rajat.netlify.app/",
+        liveLink: "https://forkify.rajat-verma.in/",
         githubLink:
             "https://github.com/rajatverma311201/forkify-app-javascript",
-        mainImage: "/projects-images/forkify-app-javascript/forkify-main.png",
+        imagesCount: 4,
         technologies: ["JavaScript", "Sass", "Parcel", "ES6"],
         topics: [
             "Javascript",
@@ -238,37 +238,14 @@ export const PROJECTS_LIST = [
     },
 
     {
-        slug: "mapty-app",
-        name: "Mapty",
-        description:
-            "A simple webapp to log your running and cycling on a map using the Geolocation API and Leaflet Maps",
-        descriptionSecondary:
-            "Built while learning JavaScript, ES6, Object Oriented Programming, GeoLocation API",
-        liveLink: "https://rajatverma311201.github.io/Mapty-App/",
-        githubLink: "https://github.com/rajatverma311201/Mapty-App",
-        mainImage: "/projects-images/mapty-app/mapty-main.png",
-        technologies: ["JavaScript", "ES6", "OOPs"],
-        topics: [
-            "Javascript",
-            "Advanced DOM Manipulation",
-            "ES6",
-            "Parcel",
-            "MVC",
-            "APIs",
-            "Asynchronous JavaScript",
-            "Netlify Forms",
-        ],
-    },
-
-    {
-        slug: "natours-sass",
+        slug: "natours",
         name: "Natours",
         description:
             "A beautiful Landing Page for a fictional adventour tour company",
         descriptionSecondary: "Built while learning Advanced CSS and Sass",
-        liveLink: "https://natours-sass-web.netlify.app/",
+        liveLink: "https://natours.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/natours-sass",
-        mainImage: "/projects-images/natours-sass/natours-main.png",
+        imagesCount: 6,
         technologies: ["CSS", "Sass", "HTML"],
         topics: [
             "Advanced CSS",
@@ -304,14 +281,14 @@ export const PROJECTS_LIST = [
     },
 
     {
-        slug: "tourist-css",
+        slug: "tourist",
         name: "Tourist",
         description:
             "A beautiful responsive home page for a travelling website",
         descriptionSecondary: "A fun project for refreshing my css skills",
-        liveLink: "https://rajatverma311201.github.io/Tourist",
+        liveLink: "https://tourist.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/Tourist",
-        mainImage: "/projects-images/tourist-css/tourist-main.png",
+        imagesCount: 4,
         technologies: ["CSS", "Javascript", "HTML"],
         topics: [
             "CSS Flexbox",
@@ -323,33 +300,14 @@ export const PROJECTS_LIST = [
     },
 
     {
-        slug: "trillo-sass",
-        name: "Trillo",
-        description:
-            "A beautiful home page for a fictional hotel booking website",
-        descriptionSecondary: "Built while learning CSS Flexbox and Sass",
-        liveLink: "https://trillo-sass-web.netlify.app/",
-        githubLink: "https://github.com/rajatverma311201/trillo-sass",
-        mainImage: "/projects-images/trillo-sass/trillo-main.png",
-        technologies: ["CSS Flexbox", "Sass", "HTML"],
-        topics: [
-            "CSS Flexbox",
-            "Pseudo elements and classes",
-            "7-1 Sass Architecture",
-            "Responsive Design",
-            "BEM Methodology",
-        ],
-    },
-
-    {
-        slug: "nexter-sass",
+        slug: "nexter",
         name: "Nexter",
         description:
             "A beautiful home page for a fictional real estate website",
         descriptionSecondary: "Built while learning Sass and CSS Grid",
-        liveLink: "https://nexter-sass-web.netlify.app/",
+        liveLink: "https://nexter.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/nexter-sass",
-        mainImage: "/projects-images/nexter-sass/nexter-main.png",
+        imagesCount: 4,
         technologies: ["CSS Grid", "Sass", "HTML"],
         topics: [
             "CSS",
