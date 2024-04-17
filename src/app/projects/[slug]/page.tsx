@@ -15,7 +15,7 @@ import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { fontSecondary } from "@/constants/fonts";
-import { get } from "http";
+import Link from "next/link";
 
 interface ProjectDetailsPageProps {
     params: {
@@ -94,20 +94,23 @@ const ProjectImagesCarousel: React.FC<{
             <Carousel
                 className="sm:w-96 md:w-[400px] lg:w-[500px] "
                 setApi={setApi}
-                // plugins={}
+                opts={{ loop: true }}
             >
                 <CarouselContent>
                     {Array.from({ length: imagesCount }).map((_, idx) => (
                         <CarouselItem key={idx}>
                             {/* <div className=""> */}
                             <Card className="overflow-hidden border-4 ">
-                                <Image
-                                    src={getProjectImage(slug, idx)}
-                                    alt={name}
-                                    width={750}
-                                    height={600}
-                                    className="aspect-auto w-full rounded"
-                                />
+                                <Link href={getProjectImage(slug, idx)}>
+                                    <Image
+                                        priority
+                                        src={getProjectImage(slug, idx)}
+                                        alt={name}
+                                        width={750}
+                                        height={600}
+                                        className="aspect-auto w-full rounded"
+                                    />
+                                </Link>
                             </Card>
                             {/* </div> */}
                         </CarouselItem>
@@ -122,9 +125,9 @@ const ProjectImagesCarousel: React.FC<{
                     <div
                         key={index}
                         className={cn(
-                            "inline-block h-2 w-2 cursor-pointer rounded-full bg-muted-foreground/40",
+                            "inline-block h-2 w-2 cursor-pointer rounded-full bg-muted-foreground/40 duration-500",
                             current === index + 1
-                                ? "h-3 w-3 bg-muted-foreground/75"
+                                ? "scale-150 bg-muted-foreground/75"
                                 : "",
                         )}
                         onClick={() => api?.scrollTo(index)}

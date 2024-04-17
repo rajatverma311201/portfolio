@@ -127,7 +127,7 @@ export const PROJECTS_LIST = [
             "Users can login, signup, reset password, update profile. Admin can manage users, roles, permissions",
         liveLink: "https://auth-nextjs.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/auth-nextjs",
-        mainImage: "/projects-images/auth-nextjs/auth-nextjs-main.png",
+        imagesCount: 6,
         technologies: [
             "NextJS",
             "MongoDB",
@@ -182,7 +182,7 @@ export const PROJECTS_LIST = [
             "Users can create, edit, delete notes and tasks. Dark mode available, publish notes and tasks",
         liveLink: "https://jotion.rajat-verma.in/",
         githubLink: "https://github.com/rajatverma311201/next-jotion",
-        mainImage: "/projects-images/jotion/jotion-main.png",
+        imagesCount: 6,
         technologies: [
             "NextJS",
             "Convex",
@@ -211,6 +211,28 @@ export const PROJECTS_LIST = [
             "Cover image of each document 🖼️",
             "Recover deleted files 🔄📄",
         ],
+    },
+
+    {
+        slug: "ecommerce-store",
+        name: "Ecommerce Store",
+        description:
+            "A fullstack ecommerce store with products, categories, orders, customers, etc.",
+        descriptionSecondary:
+            "Users can view products, add to cart, checkout, view orders, etc.",
+
+        liveLink: "https://ecommerce-store.rajat-verma.in/",
+        githubLink: "https://github.com/rajatverma311201/next-ecommerce-app",
+    },
+
+    {
+        slug: "ecommerce-admin",
+        name: "Ecommerce Admin",
+        description: "Admin panel for managing an ecommerce store",
+        descriptionSecondary:
+            "Admin can manage products, orders, customers, categories, etc.",
+        liveLink: "https://ecommerce-admin.rajat-verma.in/",
+        githubLink: "https://github.com/rajatverma311201/next-ecommerce-admin",
     },
 
     {
