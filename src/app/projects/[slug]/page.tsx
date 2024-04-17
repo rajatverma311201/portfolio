@@ -8,13 +8,14 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getProjectBySlug, getProjectImages } from "@/lib/helpers";
+import { getProjectBySlug, getProjectImage } from "@/lib/helpers";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { fontSecondary } from "@/constants/fonts";
+import { get } from "http";
 
 interface ProjectDetailsPageProps {
     params: {
@@ -31,17 +32,14 @@ const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = ({ params }) => {
     }
     const code = JSON.stringify(project, null, 2);
 
-    const images = getProjectImages(slug, project.imagesCount || 0);
-
-    const mainImgLink = images[0];
-
     return (
         <>
             <div className="flex h-full items-center justify-between gap-10">
                 <div className=" px-14 ">
                     <ProjectImagesCarousel
                         name={project.name}
-                        images={images}
+                        slug={project.slug}
+                        imagesCount={project.imagesCount || 0}
                     />
                 </div>
                 <div className="flex-1">
@@ -71,8 +69,9 @@ export default ProjectDetailsPage;
 
 const ProjectImagesCarousel: React.FC<{
     name: string;
-    images: string[];
-}> = ({ images, name }) => {
+    slug: string;
+    imagesCount: number;
+}> = ({ name, slug, imagesCount }) => {
     const [api, setApi] = useState<CarouselApi>();
     const [current, setCurrent] = useState(0);
     const [count, setCount] = useState(0);
@@ -98,12 +97,12 @@ const ProjectImagesCarousel: React.FC<{
                 // plugins={}
             >
                 <CarouselContent>
-                    {images.map((img, index) => (
-                        <CarouselItem key={index}>
+                    {Array.from({ length: imagesCount }).map((_, idx) => (
+                        <CarouselItem key={idx}>
                             {/* <div className=""> */}
                             <Card className="overflow-hidden border-4 ">
                                 <Image
-                                    src={img}
+                                    src={getProjectImage(slug, idx)}
                                     alt={name}
                                     width={750}
                                     height={600}
