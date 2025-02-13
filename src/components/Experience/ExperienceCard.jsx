@@ -35,7 +35,7 @@ const ExperienceCard = ({ exp, idx }) => (
                         {exp.position}
                     </span>
                     <span className={styles["exp-degree__long"]}>
-                        {exp.expType} - {exp.type}
+                        {exp.expType} {exp.type && "-"} {exp.type}
                     </span>
                 </motion.h4>
                 <h4 className={styles["edu-info"]}>
