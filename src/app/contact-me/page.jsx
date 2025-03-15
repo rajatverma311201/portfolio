@@ -16,6 +16,14 @@ function ContactPage() {
 
             console.log(data);
 
+            for (const key of Object.keys(data)) {
+                const val = data[key];
+                if (!val.trim()) {
+                    toast.error(`Please fill ${key} field`);
+                    return;
+                }
+            }
+
             const mailRes = await sendMail(data);
             console.log(mailRes);
 
@@ -25,8 +33,8 @@ function ContactPage() {
             toast.error("Something went wrong");
         } finally {
             setIsSubmitting(false);
-            e.target.reset();
         }
+        e.target.reset();
     };
 
     const sendMail = async (data) => {
@@ -79,20 +87,32 @@ export default ContactPage;
 const NameInput = () => (
     <>
         <label htmlFor="name">Name</label>
-        <input autoComplete={"off"} type="text" name="name" id="name" />
+        <input
+            autoComplete={"off"}
+            type="text"
+            name="name"
+            id="name"
+            required
+        />
     </>
 );
 
 const EmailInput = () => (
     <>
         <label htmlFor="email">Email</label>
-        <input autoComplete={"off"} type="email" name="email" id="email" />
+        <input
+            autoComplete={"off"}
+            type="email"
+            name="email"
+            id="email"
+            required
+        />
     </>
 );
 
 const MessageInput = () => (
     <>
         <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" autoComplete={"off"} />
+        <textarea name="message" id="message" autoComplete={"off"} required />
     </>
 );
