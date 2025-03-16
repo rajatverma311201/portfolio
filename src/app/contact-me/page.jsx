@@ -52,6 +52,13 @@ function ContactPage() {
                 Contact{" "}
                 <span className={styles["contact-heading-highlight"]}>Me</span>
             </h1>
+
+            {/* <div>
+                Email :{" "}
+                <a href="mailto:rajat311201+portfolio@gmail.com">
+                    rajat311201@gmail.com
+                </a>
+            </div> */}
             <form
                 onSubmit={handleSubmit}
                 className={styles["contact-form"]}

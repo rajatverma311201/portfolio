@@ -584,12 +584,12 @@ export const COURSES_LIST = [
 
 export const LANGUAGES_LIST = [
     {
-        name: "JavaScript",
-        icon: "javascript.svg",
-    },
-    {
         name: "TypeScript",
         icon: "typescript.svg",
+    },
+    {
+        name: "JavaScript",
+        icon: "javascript.svg",
     },
     {
         name: "Java",
@@ -599,10 +599,10 @@ export const LANGUAGES_LIST = [
         name: "Python",
         icon: "python.svg",
     },
-    {
-        name: "Dart",
-        icon: "dart.svg",
-    },
+    // {
+    //     name: "Dart",
+    //     icon: "dart.svg",
+    // },
     {
         name: "C++",
         icon: "cpp.svg",
